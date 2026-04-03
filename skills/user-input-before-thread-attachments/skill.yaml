@@ -1,0 +1,24 @@
+slug: user-input-before-thread-attachments
+name: "User Input Before Thread Attachments"
+summary: "Resolve user-input-driven attachments first, then run later attachment builders that depend on derived triggers or harvested metadata."
+when_to_use: "Use when an attachment pipeline mixes direct user-input parsing with second-stage builders that rely on triggers collected during that first pass."
+category: context-management
+maturity: recommended
+tags:
+  - context-management
+  - attachment-pipeline
+  - agent-runtime
+bundles:
+  - context-management
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/user-input-before-thread-attachments/SKILL.md
+  codex: agents/codex/skills/user-input-before-thread-attachments/SKILL.md
+  claude_code: agents/claude-code/skills/user-input-before-thread-attachments/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

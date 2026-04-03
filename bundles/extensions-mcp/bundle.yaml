@@ -4,5 +4,8 @@ description: "Extension sync and parity patterns for plugin and MCP-backed syste
 skills:
   - three-layer-extension-sync
   - headless-interactive-reconcile-parity
+  - background-marketplace-reconciliation
+  - progress-event-state-bridge
+  - auto-refresh-after-new-plugin-sources
   - mcp-skill-vs-prompt-discovery-filtering
   - plugin-only-agent-surface-gating

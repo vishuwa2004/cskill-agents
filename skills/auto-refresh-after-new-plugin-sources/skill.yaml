@@ -1,0 +1,24 @@
+slug: auto-refresh-after-new-plugin-sources
+name: "Auto Refresh After New Plugin Sources"
+summary: "Clear source and plugin caches, then trigger a best-effort refresh whenever reconciliation installs new sources."
+when_to_use: "Use when newly installed plugin sources should become live immediately and the runtime must attempt an automatic refresh before falling back to manual recovery."
+category: extensions-mcp
+maturity: core
+tags:
+  - extensions-mcp
+  - cache-invalidation
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/auto-refresh-after-new-plugin-sources/SKILL.md
+  codex: agents/codex/skills/auto-refresh-after-new-plugin-sources/SKILL.md
+  claude_code: agents/claude-code/skills/auto-refresh-after-new-plugin-sources/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

@@ -1,4 +1,7 @@
 agents/codex/skills/three-layer-extension-sync
 agents/codex/skills/headless-interactive-reconcile-parity
+agents/codex/skills/background-marketplace-reconciliation
+agents/codex/skills/progress-event-state-bridge
+agents/codex/skills/auto-refresh-after-new-plugin-sources
 agents/codex/skills/mcp-skill-vs-prompt-discovery-filtering
 agents/codex/skills/plugin-only-agent-surface-gating

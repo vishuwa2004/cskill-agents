@@ -14,3 +14,4 @@ agents/claude-code/skills/turn-scoped-memory-prefetch-with-disposal
 agents/claude-code/skills/session-memory-first-compaction
 agents/claude-code/skills/relevant-memory-selection-by-header
 agents/claude-code/skills/forked-auto-memory-extraction
+agents/claude-code/skills/user-input-before-thread-attachments

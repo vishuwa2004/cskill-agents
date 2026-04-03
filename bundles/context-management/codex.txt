@@ -14,3 +14,4 @@ agents/codex/skills/turn-scoped-memory-prefetch-with-disposal
 agents/codex/skills/session-memory-first-compaction
 agents/codex/skills/relevant-memory-selection-by-header
 agents/codex/skills/forked-auto-memory-extraction
+agents/codex/skills/user-input-before-thread-attachments

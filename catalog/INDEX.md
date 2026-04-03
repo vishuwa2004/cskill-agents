@@ -1,6 +1,6 @@
 # Curated Skill Index
 
-This repo ships 84 curated skills selected for building or improving agentic coding CLIs, terminal tools, and multi-agent runtimes.
+This repo ships 89 curated skills selected for building or improving agentic coding CLIs, terminal tools, and multi-agent runtimes.
 
 ## Starter Bundle
 
@@ -73,6 +73,7 @@ Skills for tool batching, streaming, validation, persistence, and output shaping
 - [Idempotent Tool Result Persistence](../skills/idempotent-tool-result-persistence/SKILL.md): Persist tool results once, avoid re-writing duplicates, and summarize via previews so long outputs stay accessible yet capped.
 - [Modality-Preserving Binary Offload](../skills/modality-preserving-binary-offload/SKILL.md): Persist binary output with a mime-derived extension and a matching saved-file message so downstream tools keep the right modality.
 - [Ordered Streaming Tool Execution](../skills/ordered-streaming-tool-execution/SKILL.md): Buffer and execute streaming tool calls with concurrency awareness so results appear in request order even when multiple runners overlap.
+- [Preview-First Large Output Messages](../skills/preview-first-large-output-messages/SKILL.md): Persist oversized tool output once and lead with a preview plus saved-artifact reference so readers see the start without losing the full result.
 - [Progress-First Tool Emission](../skills/progress-first-tool-emission/SKILL.md): Emit progress/value updates as soon as they arrive while still buffering final results and handling cancellations or sibling errors.
 - [Required Argument Aware Flag Validation](../skills/required-argument-aware-flag-validation/SKILL.md): Walk command tokens while inspecting attached/inline arguments so validators never skip missing or dangerous flag values.
 - [Tail-Preserving Task Output Truncation](../skills/tail-preserving-task-output-truncation/SKILL.md): Persist tool outputs alongside metadata and truncate only the preview, ensuring the header points back to the persisted replica.
@@ -97,6 +98,7 @@ Skills for compaction, memory fetch, retry control, and long-running session sta
 - [Time-Gap Cache-Expiry Microcompact](../skills/time-gap-cache-expiry-microcompact/SKILL.md): When a long idle gap means the server cache is cold, clear old tool-result content before the next request instead of attempting warm-cache cache edits.
 - [Token Budgeted Compaction With Reinjection](../skills/token-budgeted-compaction-with-reinjection/SKILL.md): Keep compaction budgets under control by compacting incrementally and reinjecting truncated attachments only when the reasoning surface remains stable.
 - [Turn-Scoped Memory Prefetch with Disposal](../skills/turn-scoped-memory-prefetch-with-disposal/SKILL.md): Start a non-blocking, turn-scoped memory prefetch that auto-disposes and only injects results once per turn.
+- [User Input Before Thread Attachments](../skills/user-input-before-thread-attachments/SKILL.md): Resolve user-input-driven attachments first, then run later attachment builders that depend on derived triggers or harvested metadata.
 
 ### Multi-Agent
 
@@ -122,9 +124,12 @@ Skills for child agents, forked execution, permission inheritance, and lifecycle
 
 Skills for extension reconciliation, MCP surfaces, and runtime activation.
 
+- [Auto Refresh After New Plugin Sources](../skills/auto-refresh-after-new-plugin-sources/SKILL.md): Clear source and plugin caches, then trigger a best-effort refresh whenever reconciliation installs new sources.
+- [Background Marketplace Reconciliation](../skills/background-marketplace-reconciliation/SKILL.md): Diff declared plugin marketplaces against local state, seed pending UI rows, and reconcile them in the background without blocking startup.
 - [Headless Interactive Reconcile Parity](../skills/headless-interactive-reconcile-parity/SKILL.md): Keep interactive and headless extension installation flows behaviorally aligned by sharing reconciliation logic and adapting only the outer contract.
 - [MCP Skill vs Prompt Discovery Filtering](../skills/mcp-skill-vs-prompt-discovery-filtering/SKILL.md): Merge MCP-discovered prompt skills with local commands only after type filtering and name deduplication.
 - [Plugin-Only Agent Surface Gating](../skills/plugin-only-agent-surface-gating/SKILL.md): Prevent untrusted agent definitions from expanding the MCP surface when the session is locked to plugin-only extensions.
+- [Progress Event State Bridge](../skills/progress-event-state-bridge/SKILL.md): Map background reconciliation progress events onto shared UI state so each source row reflects installing, installed, or failed.
 - [Three-Layer Extension Sync](../skills/three-layer-extension-sync/SKILL.md): Model extension lifecycle as intent, materialization, and active runtime layers, then sync each layer with dedicated transitions.
 
 ### Safety And Worktrees

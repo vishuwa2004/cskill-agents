@@ -18,3 +18,4 @@ skills:
   - session-memory-first-compaction
   - relevant-memory-selection-by-header
   - forked-auto-memory-extraction
+  - user-input-before-thread-attachments

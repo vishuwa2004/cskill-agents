@@ -1,0 +1,24 @@
+slug: background-marketplace-reconciliation
+name: "Background Marketplace Reconciliation"
+summary: "Diff declared plugin marketplaces against local state, seed pending UI rows, and reconcile them in the background without blocking startup."
+when_to_use: "Use when plugin sources or marketplaces may need install or update work at startup, but the main agent loop must stay responsive while the UI still shows per-source status."
+category: extensions-mcp
+maturity: core
+tags:
+  - extensions-mcp
+  - plugin-lifecycle
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/background-marketplace-reconciliation/SKILL.md
+  codex: agents/codex/skills/background-marketplace-reconciliation/SKILL.md
+  claude_code: agents/claude-code/skills/background-marketplace-reconciliation/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

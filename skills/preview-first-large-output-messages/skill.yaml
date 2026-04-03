@@ -1,0 +1,23 @@
+slug: preview-first-large-output-messages
+name: "Preview-First Large Output Messages"
+summary: "Persist oversized tool output once and lead with a preview plus saved-artifact reference so readers see the start without losing the full result."
+when_to_use: "Use when tool or task output is too large to inline and the response should preserve the full artifact while still showing a bounded preview from the beginning."
+category: tool-orchestration
+maturity: core
+tags:
+  - tool-orchestration
+  - output-budgeting
+bundles:
+  - tool-orchestration
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/preview-first-large-output-messages/SKILL.md
+  codex: agents/codex/skills/preview-first-large-output-messages/SKILL.md
+  claude_code: agents/claude-code/skills/preview-first-large-output-messages/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

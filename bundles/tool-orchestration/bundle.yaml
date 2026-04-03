@@ -9,6 +9,7 @@ skills:
   - capability-pool-resolution
   - required-argument-aware-flag-validation
   - idempotent-tool-result-persistence
+  - preview-first-large-output-messages
   - modality-preserving-binary-offload
   - wire-shape-aligned-budgeting
   - tail-preserving-task-output-truncation

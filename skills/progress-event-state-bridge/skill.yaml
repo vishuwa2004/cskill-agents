@@ -1,0 +1,24 @@
+slug: progress-event-state-bridge
+name: "Progress Event State Bridge"
+summary: "Map background reconciliation progress events onto shared UI state so each source row reflects installing, installed, or failed."
+when_to_use: "Use when a background install or reconciliation engine emits per-source progress events and the UI needs one immutable path to reflect those transitions."
+category: extensions-mcp
+maturity: recommended
+tags:
+  - extensions-mcp
+  - ui-state
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/progress-event-state-bridge/SKILL.md
+  codex: agents/codex/skills/progress-event-state-bridge/SKILL.md
+  claude_code: agents/claude-code/skills/progress-event-state-bridge/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated
