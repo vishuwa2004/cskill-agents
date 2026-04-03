@@ -4,8 +4,13 @@ description: "Extension sync and parity patterns for plugin and MCP-backed syste
 skills:
   - three-layer-extension-sync
   - headless-interactive-reconcile-parity
+  - seed-before-diff-marketplace-registration
+  - canonical-root-marketplace-path-normalization
   - background-marketplace-reconciliation
   - progress-event-state-bridge
   - auto-refresh-after-new-plugin-sources
+  - steady-state-sidecar-sync
+  - delist-after-reconcile-enforcement
+  - external-error-preserving-refresh-merge
   - mcp-skill-vs-prompt-discovery-filtering
   - plugin-only-agent-surface-gating

@@ -1,6 +1,10 @@
 agents/codex/skills/ansi-safe-border-caption-embedding
 agents/codex/skills/wrapped-text-style-preservation
+agents/codex/skills/semantic-theme-key-rendering
 agents/codex/skills/capability-based-spinner-glyph-selection
+agents/codex/skills/stall-to-alert-color-escalation
+agents/codex/skills/fixed-footprint-unicode-mascot-composition
+agents/codex/skills/pose-fragment-unicode-sprite-design
 agents/codex/skills/progressive-width-gated-status-rows
 agents/codex/skills/reduced-motion-first-terminal-animation
 agents/codex/skills/viewport-aware-animation-pausing

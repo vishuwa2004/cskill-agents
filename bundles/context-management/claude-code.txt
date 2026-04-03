@@ -6,12 +6,15 @@ agents/claude-code/skills/autocompact-recursion-guards
 agents/claude-code/skills/cache-edit-pin-and-replay
 agents/claude-code/skills/largest-first-context-shedding
 agents/claude-code/skills/reserved-summary-output-budget
+agents/claude-code/skills/media-block-compaction-prep
 agents/claude-code/skills/token-budgeted-compaction-with-reinjection
+agents/claude-code/skills/reinjected-attachment-pruning-before-summary
 agents/claude-code/skills/progressive-compaction-prompt
 agents/claude-code/skills/compactable-tool-whitelist-gating
 agents/claude-code/skills/time-gap-cache-expiry-microcompact
 agents/claude-code/skills/turn-scoped-memory-prefetch-with-disposal
 agents/claude-code/skills/session-memory-first-compaction
 agents/claude-code/skills/relevant-memory-selection-by-header
+agents/claude-code/skills/tool-success-aware-memory-suppression
 agents/claude-code/skills/forked-auto-memory-extraction
 agents/claude-code/skills/user-input-before-thread-attachments

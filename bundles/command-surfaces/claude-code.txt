@@ -13,3 +13,4 @@ agents/claude-code/skills/mcp-skill-vs-prompt-discovery-filtering
 agents/claude-code/skills/slash-command-skill-classification-filter
 agents/claude-code/skills/budget-aware-skill-listing-formatting
 agents/claude-code/skills/local-and-mcp-skill-name-deduplication
+agents/claude-code/skills/per-agent-skill-listing-dedupe

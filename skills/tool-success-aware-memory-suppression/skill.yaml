@@ -1,0 +1,24 @@
+slug: tool-success-aware-memory-suppression
+name: "Tool Success Aware Memory Suppression"
+summary: "Hide context docs for tools that already succeeded this turn while keeping guidance available for failed or unresolved tools."
+when_to_use: "Use when memory or doc injection should focus on the tools the model is struggling with instead of re-explaining tools it already used successfully in the current turn."
+category: context-management
+maturity: recommended
+tags:
+  - context-management
+  - memory-selection
+  - agent-runtime
+bundles:
+  - context-management
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/tool-success-aware-memory-suppression/SKILL.md
+  codex: agents/codex/skills/tool-success-aware-memory-suppression/SKILL.md
+  claude_code: agents/claude-code/skills/tool-success-aware-memory-suppression/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

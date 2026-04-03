@@ -1,0 +1,24 @@
+slug: steady-state-sidecar-sync
+name: "Steady-State Sidecar Sync"
+summary: "Rebuild derived sidecar caches from authoritative extension state even when the current run made no new installs."
+when_to_use: "Use when mirrored caches or sidecar artifacts can disappear between runs even though the primary installed set stayed unchanged."
+category: extensions-mcp
+maturity: recommended
+tags:
+  - extensions-mcp
+  - sidecar-sync
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/steady-state-sidecar-sync/SKILL.md
+  codex: agents/codex/skills/steady-state-sidecar-sync/SKILL.md
+  claude_code: agents/claude-code/skills/steady-state-sidecar-sync/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

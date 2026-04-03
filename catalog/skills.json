@@ -586,6 +586,38 @@
     }
   },
   {
+    "slug": "canonical-root-marketplace-path-normalization",
+    "name": "Canonical-Root Marketplace Path Normalization",
+    "summary": "Normalize relative extension source paths against a canonical repo root so shared records stay stable across worktrees.",
+    "when_to_use": "Use when local extension paths are stored in a shared registry and multiple worktrees or checkouts might otherwise stamp conflicting absolute paths.",
+    "category": "extensions-mcp",
+    "maturity": "recommended",
+    "tags": [
+      "extensions-mcp",
+      "worktrees",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "extensions-mcp",
+      "safety-worktrees"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/canonical-root-marketplace-path-normalization/SKILL.md",
+      "codex": "agents/codex/skills/canonical-root-marketplace-path-normalization/SKILL.md",
+      "claude_code": "agents/claude-code/skills/canonical-root-marketplace-path-normalization/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "extensions-mcp",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "canonical-worktree-path-normalization",
     "name": "Canonical Worktree Path Normalization",
     "summary": "Resolve repo-relative paths against the canonical checkout root so shared state stays stable across Git worktrees.",
@@ -612,6 +644,37 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "safety-worktrees",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "capability-aware-offload-skipping",
+    "name": "Capability-Aware Offload Skipping",
+    "summary": "Skip generic output offload for tools whose own contracts already bound output or would become circular if wrapped again.",
+    "when_to_use": "Use when a generic persistence or preview wrapper covers many tools but some tools should bypass it because they already self-bound output or would recurse.",
+    "category": "tool-orchestration",
+    "maturity": "recommended",
+    "tags": [
+      "tool-orchestration",
+      "output-budgeting",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "tool-orchestration"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/capability-aware-offload-skipping/SKILL.md",
+      "codex": "agents/codex/skills/capability-aware-offload-skipping/SKILL.md",
+      "claude_code": "agents/claude-code/skills/capability-aware-offload-skipping/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "tool-orchestration",
       "review_status": "curated"
     }
   },
@@ -954,6 +1017,37 @@
     }
   },
   {
+    "slug": "delist-after-reconcile-enforcement",
+    "name": "Delist-After-Reconcile Enforcement",
+    "summary": "Enforce removals after extension synchronization and treat delisted entries as real downstream changes.",
+    "when_to_use": "Use when an extension or plugin runtime must remove policy-blocked items after reconciliation and still propagate that change to callers.",
+    "category": "extensions-mcp",
+    "maturity": "recommended",
+    "tags": [
+      "extensions-mcp",
+      "policy-enforcement",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "extensions-mcp"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/delist-after-reconcile-enforcement/SKILL.md",
+      "codex": "agents/codex/skills/delist-after-reconcile-enforcement/SKILL.md",
+      "claude_code": "agents/claude-code/skills/delist-after-reconcile-enforcement/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "extensions-mcp",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "descriptive-skill-surface-admission",
     "name": "Descriptive Skill Surface Admission",
     "summary": "Use source-aware admission rules so trusted local skills can surface automatically while plugin or MCP-provided entries must supply explicit descriptive metadata.",
@@ -1018,6 +1112,37 @@
     }
   },
   {
+    "slug": "external-error-preserving-refresh-merge",
+    "name": "External Error Preserving Refresh Merge",
+    "summary": "Merge refresh-owned diagnostics with externally owned errors so one reload updates its slice without erasing adjacent subsystem failures.",
+    "when_to_use": "Use when a subsystem refresh recomputes its own errors but related diagnostics from other live subsystems must remain visible.",
+    "category": "extensions-mcp",
+    "maturity": "recommended",
+    "tags": [
+      "extensions-mcp",
+      "diagnostics",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "extensions-mcp"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/external-error-preserving-refresh-merge/SKILL.md",
+      "codex": "agents/codex/skills/external-error-preserving-refresh-merge/SKILL.md",
+      "claude_code": "agents/claude-code/skills/external-error-preserving-refresh-merge/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "extensions-mcp",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "fast-worktree-reuse-with-head-pointer-checks",
     "name": "Fast Worktree Reuse With Head Pointer Checks",
     "summary": "Resume existing worktrees quickly by checking stored HEAD pointers before fetching or recreating.",
@@ -1078,6 +1203,37 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "fixed-footprint-unicode-mascot-composition",
+    "name": "Fixed-Footprint Unicode Mascot Composition",
+    "summary": "Compose terminal mascots from stable spans plus swappable fragments so animated poses stay expressive without changing layout.",
+    "when_to_use": "Use when a terminal product needs mascot-style Unicode art that can animate or change expression while keeping a fixed render footprint.",
+    "category": "terminal-ui",
+    "maturity": "core",
+    "tags": [
+      "terminal-ui",
+      "mascot-design",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "terminal-ui"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/fixed-footprint-unicode-mascot-composition/SKILL.md",
+      "codex": "agents/codex/skills/fixed-footprint-unicode-mascot-composition/SKILL.md",
+      "claude_code": "agents/claude-code/skills/fixed-footprint-unicode-mascot-composition/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "terminal-ui",
       "review_status": "curated"
     }
   },
@@ -1201,6 +1357,37 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "extensions-mcp",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "hook-context-attachment-injection",
+    "name": "Hook Context Attachment Injection",
+    "summary": "Collect startup hook context and inject it as metadata attachments before a child agent's first request.",
+    "when_to_use": "Use when startup hooks generate extra context for a spawned agent and that context must be visible before the first model call.",
+    "category": "multi-agent",
+    "maturity": "recommended",
+    "tags": [
+      "multi-agent",
+      "context-seeding",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "multi-agent"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/hook-context-attachment-injection/SKILL.md",
+      "codex": "agents/codex/skills/hook-context-attachment-injection/SKILL.md",
+      "claude_code": "agents/claude-code/skills/hook-context-attachment-injection/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "multi-agent",
       "review_status": "curated"
     }
   },
@@ -1488,6 +1675,37 @@
     }
   },
   {
+    "slug": "media-block-compaction-prep",
+    "name": "Media-Block Compaction Prep",
+    "summary": "Replace heavy media blocks with lightweight placeholders before compaction so summaries stay inside budget without losing structural cues.",
+    "when_to_use": "Use when compaction must summarize a session that contains images, documents, or other heavy user-supplied media blocks.",
+    "category": "context-management",
+    "maturity": "recommended",
+    "tags": [
+      "context-management",
+      "compaction",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "context-management"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/media-block-compaction-prep/SKILL.md",
+      "codex": "agents/codex/skills/media-block-compaction-prep/SKILL.md",
+      "claude_code": "agents/claude-code/skills/media-block-compaction-prep/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "context-management",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "memoized-command-source-aggregation",
     "name": "Memoized Command Source Aggregation",
     "summary": "Load independent command sources in parallel, then memoize the merged registry by cwd so repeated lookups stay cheap and ordered.",
@@ -1674,6 +1892,37 @@
     }
   },
   {
+    "slug": "per-agent-skill-listing-dedupe",
+    "name": "Per-Agent Skill Listing Dedupe",
+    "summary": "Track announced skills per agent or thread so each child agent gets its own first-turn capability listing instead of inheriting another thread's seen state.",
+    "when_to_use": "Use when multiple agents or threads can receive skill listings and each one needs its own delta tracking instead of a shared global seen-set.",
+    "category": "multi-agent",
+    "maturity": "core",
+    "tags": [
+      "multi-agent",
+      "skill-listing",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "multi-agent"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/per-agent-skill-listing-dedupe/SKILL.md",
+      "codex": "agents/codex/skills/per-agent-skill-listing-dedupe/SKILL.md",
+      "claude_code": "agents/claude-code/skills/per-agent-skill-listing-dedupe/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "multi-agent",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "permission-overlay-inheritance",
     "name": "Permission Overlay Inheritance",
     "summary": "Layer child permission rules over parent session policy without dropping root-level grants or mutating shared state.",
@@ -1798,6 +2047,37 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "pose-fragment-unicode-sprite-design",
+    "name": "Pose-Fragment Unicode Sprite Design",
+    "summary": "Build expressive Unicode sprite systems from a stable base plus localized fragment swaps so poses stay aligned and cheap to extend.",
+    "when_to_use": "Use when a terminal character or icon needs multiple expressions or gestures while preserving one stable silhouette and spacing model.",
+    "category": "terminal-ui",
+    "maturity": "recommended",
+    "tags": [
+      "terminal-ui",
+      "sprite-design",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "terminal-ui"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/pose-fragment-unicode-sprite-design/SKILL.md",
+      "codex": "agents/codex/skills/pose-fragment-unicode-sprite-design/SKILL.md",
+      "claude_code": "agents/claude-code/skills/pose-fragment-unicode-sprite-design/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "terminal-ui",
       "review_status": "curated"
     }
   },
@@ -2049,6 +2329,37 @@
     }
   },
   {
+    "slug": "reinjected-attachment-pruning-before-summary",
+    "name": "Reinjected Attachment Pruning Before Summary",
+    "summary": "Prune attachments that will be regenerated after compaction so the summarizer spends budget on durable context instead.",
+    "when_to_use": "Use when some attachment types are guaranteed to be reintroduced after compaction and should not consume summary tokens twice.",
+    "category": "context-management",
+    "maturity": "recommended",
+    "tags": [
+      "context-management",
+      "compaction",
+      "attachment-pipeline"
+    ],
+    "bundles": [
+      "context-management"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/reinjected-attachment-pruning-before-summary/SKILL.md",
+      "codex": "agents/codex/skills/reinjected-attachment-pruning-before-summary/SKILL.md",
+      "claude_code": "agents/claude-code/skills/reinjected-attachment-pruning-before-summary/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "context-management",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "relevant-memory-selection-by-header",
     "name": "Relevant Memory Selection By Header",
     "summary": "Rank memory files by header descriptions so only a small high-signal subset is injected back into context.",
@@ -2236,6 +2547,68 @@
     }
   },
   {
+    "slug": "seed-before-diff-marketplace-registration",
+    "name": "Seed-Before-Diff Marketplace Registration",
+    "summary": "Register seeded extension sources before diffing so bootstrap content is treated as already present.",
+    "when_to_use": "Use when startup includes pre-seeded sources or mirrors that should participate in reconciliation without being recloned.",
+    "category": "extensions-mcp",
+    "maturity": "core",
+    "tags": [
+      "extensions-mcp",
+      "bootstrap-sources",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "extensions-mcp"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/seed-before-diff-marketplace-registration/SKILL.md",
+      "codex": "agents/codex/skills/seed-before-diff-marketplace-registration/SKILL.md",
+      "claude_code": "agents/claude-code/skills/seed-before-diff-marketplace-registration/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "extensions-mcp",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "semantic-theme-key-rendering",
+    "name": "Semantic Theme-Key Rendering",
+    "summary": "Resolve semantic color keys through the active palette and contextual overrides before rendering terminal text.",
+    "when_to_use": "Use when terminal components accept theme keys such as warning, success, or muted rather than hardcoded color literals.",
+    "category": "terminal-ui",
+    "maturity": "recommended",
+    "tags": [
+      "terminal-ui",
+      "theming",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "terminal-ui"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/semantic-theme-key-rendering/SKILL.md",
+      "codex": "agents/codex/skills/semantic-theme-key-rendering/SKILL.md",
+      "claude_code": "agents/claude-code/skills/semantic-theme-key-rendering/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "terminal-ui",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "session-memory-first-compaction",
     "name": "Session Memory First Compaction",
     "summary": "Try lightweight session-memory summaries before falling back to heavyweight full-conversation compaction.",
@@ -2326,6 +2699,68 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "stall-to-alert-color-escalation",
+    "name": "Stall-to-Alert Color Escalation",
+    "summary": "Blend progress colors toward an alert hue as stall intensity rises so stuck work becomes obvious without changing layout.",
+    "when_to_use": "Use when spinners or progress indicators should communicate rising stall severity through color instead of larger warning UI.",
+    "category": "terminal-ui",
+    "maturity": "recommended",
+    "tags": [
+      "terminal-ui",
+      "status-feedback",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "terminal-ui"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/stall-to-alert-color-escalation/SKILL.md",
+      "codex": "agents/codex/skills/stall-to-alert-color-escalation/SKILL.md",
+      "claude_code": "agents/claude-code/skills/stall-to-alert-color-escalation/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "terminal-ui",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "steady-state-sidecar-sync",
+    "name": "Steady-State Sidecar Sync",
+    "summary": "Rebuild derived sidecar caches from authoritative extension state even when the current run made no new installs.",
+    "when_to_use": "Use when mirrored caches or sidecar artifacts can disappear between runs even though the primary installed set stayed unchanged.",
+    "category": "extensions-mcp",
+    "maturity": "recommended",
+    "tags": [
+      "extensions-mcp",
+      "sidecar-sync",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "extensions-mcp"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/steady-state-sidecar-sync/SKILL.md",
+      "codex": "agents/codex/skills/steady-state-sidecar-sync/SKILL.md",
+      "claude_code": "agents/claude-code/skills/steady-state-sidecar-sync/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "extensions-mcp",
       "review_status": "curated"
     }
   },
@@ -2475,6 +2910,37 @@
       "universal": "skills/token-budgeted-compaction-with-reinjection/SKILL.md",
       "codex": "agents/codex/skills/token-budgeted-compaction-with-reinjection/SKILL.md",
       "claude_code": "agents/claude-code/skills/token-budgeted-compaction-with-reinjection/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "context-management",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "tool-success-aware-memory-suppression",
+    "name": "Tool Success Aware Memory Suppression",
+    "summary": "Hide context docs for tools that already succeeded this turn while keeping guidance available for failed or unresolved tools.",
+    "when_to_use": "Use when memory or doc injection should focus on the tools the model is struggling with instead of re-explaining tools it already used successfully in the current turn.",
+    "category": "context-management",
+    "maturity": "recommended",
+    "tags": [
+      "context-management",
+      "memory-selection",
+      "agent-runtime"
+    ],
+    "bundles": [
+      "context-management"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/tool-success-aware-memory-suppression/SKILL.md",
+      "codex": "agents/codex/skills/tool-success-aware-memory-suppression/SKILL.md",
+      "claude_code": "agents/claude-code/skills/tool-success-aware-memory-suppression/SKILL.md"
     },
     "source": {
       "type": "reviewed-implementation",

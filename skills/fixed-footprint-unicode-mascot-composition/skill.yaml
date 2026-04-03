@@ -1,0 +1,24 @@
+slug: fixed-footprint-unicode-mascot-composition
+name: "Fixed-Footprint Unicode Mascot Composition"
+summary: "Compose terminal mascots from stable spans plus swappable fragments so animated poses stay expressive without changing layout."
+when_to_use: "Use when a terminal product needs mascot-style Unicode art that can animate or change expression while keeping a fixed render footprint."
+category: terminal-ui
+maturity: core
+tags:
+  - terminal-ui
+  - mascot-design
+  - agent-runtime
+bundles:
+  - terminal-ui
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/fixed-footprint-unicode-mascot-composition/SKILL.md
+  codex: agents/codex/skills/fixed-footprint-unicode-mascot-composition/SKILL.md
+  claude_code: agents/claude-code/skills/fixed-footprint-unicode-mascot-composition/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: terminal-ui
+  review_status: curated

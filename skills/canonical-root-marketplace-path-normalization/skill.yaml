@@ -1,0 +1,25 @@
+slug: canonical-root-marketplace-path-normalization
+name: "Canonical-Root Marketplace Path Normalization"
+summary: "Normalize relative extension source paths against a canonical repo root so shared records stay stable across worktrees."
+when_to_use: "Use when local extension paths are stored in a shared registry and multiple worktrees or checkouts might otherwise stamp conflicting absolute paths."
+category: extensions-mcp
+maturity: recommended
+tags:
+  - extensions-mcp
+  - worktrees
+  - agent-runtime
+bundles:
+  - extensions-mcp
+  - safety-worktrees
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/canonical-root-marketplace-path-normalization/SKILL.md
+  codex: agents/codex/skills/canonical-root-marketplace-path-normalization/SKILL.md
+  claude_code: agents/claude-code/skills/canonical-root-marketplace-path-normalization/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

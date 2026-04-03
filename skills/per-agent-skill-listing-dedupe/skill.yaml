@@ -1,0 +1,24 @@
+slug: per-agent-skill-listing-dedupe
+name: "Per-Agent Skill Listing Dedupe"
+summary: "Track announced skills per agent or thread so each child agent gets its own first-turn capability listing instead of inheriting another thread's seen state."
+when_to_use: "Use when multiple agents or threads can receive skill listings and each one needs its own delta tracking instead of a shared global seen-set."
+category: multi-agent
+maturity: core
+tags:
+  - multi-agent
+  - skill-listing
+  - agent-runtime
+bundles:
+  - multi-agent
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/per-agent-skill-listing-dedupe/SKILL.md
+  codex: agents/codex/skills/per-agent-skill-listing-dedupe/SKILL.md
+  claude_code: agents/claude-code/skills/per-agent-skill-listing-dedupe/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

@@ -1,4 +1,5 @@
 agents/codex/skills/canonical-worktree-path-normalization
+agents/codex/skills/canonical-root-marketplace-path-normalization
 agents/codex/skills/fast-worktree-reuse-with-head-pointer-checks
 agents/codex/skills/safe-worktree-slug-validation
 agents/codex/skills/case-normalized-sensitive-path-guards

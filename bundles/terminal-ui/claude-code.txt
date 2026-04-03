@@ -1,6 +1,10 @@
 agents/claude-code/skills/ansi-safe-border-caption-embedding
 agents/claude-code/skills/wrapped-text-style-preservation
+agents/claude-code/skills/semantic-theme-key-rendering
 agents/claude-code/skills/capability-based-spinner-glyph-selection
+agents/claude-code/skills/stall-to-alert-color-escalation
+agents/claude-code/skills/fixed-footprint-unicode-mascot-composition
+agents/claude-code/skills/pose-fragment-unicode-sprite-design
 agents/claude-code/skills/progressive-width-gated-status-rows
 agents/claude-code/skills/reduced-motion-first-terminal-animation
 agents/claude-code/skills/viewport-aware-animation-pausing

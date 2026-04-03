@@ -1,4 +1,5 @@
 agents/claude-code/skills/canonical-worktree-path-normalization
+agents/claude-code/skills/canonical-root-marketplace-path-normalization
 agents/claude-code/skills/fast-worktree-reuse-with-head-pointer-checks
 agents/claude-code/skills/safe-worktree-slug-validation
 agents/claude-code/skills/case-normalized-sensitive-path-guards

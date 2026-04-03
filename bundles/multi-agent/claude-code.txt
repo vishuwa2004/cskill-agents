@@ -1,4 +1,6 @@
 agents/claude-code/skills/additive-agent-tool-surface-construction
+agents/claude-code/skills/per-agent-skill-listing-dedupe
+agents/claude-code/skills/hook-context-attachment-injection
 agents/claude-code/skills/agent-specific-mcp-server-initialization
 agents/claude-code/skills/namespace-resolved-skill-preloading
 agents/claude-code/skills/plugin-only-agent-surface-gating

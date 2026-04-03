@@ -1,0 +1,24 @@
+slug: capability-aware-offload-skipping
+name: "Capability-Aware Offload Skipping"
+summary: "Skip generic output offload for tools whose own contracts already bound output or would become circular if wrapped again."
+when_to_use: "Use when a generic persistence or preview wrapper covers many tools but some tools should bypass it because they already self-bound output or would recurse."
+category: tool-orchestration
+maturity: recommended
+tags:
+  - tool-orchestration
+  - output-budgeting
+  - agent-runtime
+bundles:
+  - tool-orchestration
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/capability-aware-offload-skipping/SKILL.md
+  codex: agents/codex/skills/capability-aware-offload-skipping/SKILL.md
+  claude_code: agents/claude-code/skills/capability-aware-offload-skipping/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

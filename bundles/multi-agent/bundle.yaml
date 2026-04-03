@@ -3,6 +3,8 @@ name: "Multi-Agent"
 description: "Subagent tool surfaces, fork control, lifecycle cleanup, and isolation patterns."
 skills:
   - additive-agent-tool-surface-construction
+  - per-agent-skill-listing-dedupe
+  - hook-context-attachment-injection
   - agent-specific-mcp-server-initialization
   - namespace-resolved-skill-preloading
   - plugin-only-agent-surface-gating

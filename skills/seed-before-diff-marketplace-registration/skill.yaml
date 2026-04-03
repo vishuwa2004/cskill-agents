@@ -1,0 +1,24 @@
+slug: seed-before-diff-marketplace-registration
+name: "Seed-Before-Diff Marketplace Registration"
+summary: "Register seeded extension sources before diffing so bootstrap content is treated as already present."
+when_to_use: "Use when startup includes pre-seeded sources or mirrors that should participate in reconciliation without being recloned."
+category: extensions-mcp
+maturity: core
+tags:
+  - extensions-mcp
+  - bootstrap-sources
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/seed-before-diff-marketplace-registration/SKILL.md
+  codex: agents/codex/skills/seed-before-diff-marketplace-registration/SKILL.md
+  claude_code: agents/claude-code/skills/seed-before-diff-marketplace-registration/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

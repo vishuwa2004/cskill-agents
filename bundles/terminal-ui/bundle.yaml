@@ -4,7 +4,11 @@ description: "Terminal framing, style preservation, responsive status rows, and 
 skills:
   - ansi-safe-border-caption-embedding
   - wrapped-text-style-preservation
+  - semantic-theme-key-rendering
   - capability-based-spinner-glyph-selection
+  - stall-to-alert-color-escalation
+  - fixed-footprint-unicode-mascot-composition
+  - pose-fragment-unicode-sprite-design
   - progressive-width-gated-status-rows
   - reduced-motion-first-terminal-animation
   - viewport-aware-animation-pausing

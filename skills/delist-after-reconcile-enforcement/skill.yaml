@@ -1,0 +1,24 @@
+slug: delist-after-reconcile-enforcement
+name: "Delist-After-Reconcile Enforcement"
+summary: "Enforce removals after extension synchronization and treat delisted entries as real downstream changes."
+when_to_use: "Use when an extension or plugin runtime must remove policy-blocked items after reconciliation and still propagate that change to callers."
+category: extensions-mcp
+maturity: recommended
+tags:
+  - extensions-mcp
+  - policy-enforcement
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/delist-after-reconcile-enforcement/SKILL.md
+  codex: agents/codex/skills/delist-after-reconcile-enforcement/SKILL.md
+  claude_code: agents/claude-code/skills/delist-after-reconcile-enforcement/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

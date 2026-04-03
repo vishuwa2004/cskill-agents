@@ -1,0 +1,24 @@
+slug: pose-fragment-unicode-sprite-design
+name: "Pose-Fragment Unicode Sprite Design"
+summary: "Build expressive Unicode sprite systems from a stable base plus localized fragment swaps so poses stay aligned and cheap to extend."
+when_to_use: "Use when a terminal character or icon needs multiple expressions or gestures while preserving one stable silhouette and spacing model."
+category: terminal-ui
+maturity: recommended
+tags:
+  - terminal-ui
+  - sprite-design
+  - agent-runtime
+bundles:
+  - terminal-ui
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/pose-fragment-unicode-sprite-design/SKILL.md
+  codex: agents/codex/skills/pose-fragment-unicode-sprite-design/SKILL.md
+  claude_code: agents/claude-code/skills/pose-fragment-unicode-sprite-design/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: terminal-ui
+  review_status: curated

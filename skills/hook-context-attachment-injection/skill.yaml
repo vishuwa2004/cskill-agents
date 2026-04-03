@@ -1,0 +1,24 @@
+slug: hook-context-attachment-injection
+name: "Hook Context Attachment Injection"
+summary: "Collect startup hook context and inject it as metadata attachments before a child agent's first request."
+when_to_use: "Use when startup hooks generate extra context for a spawned agent and that context must be visible before the first model call."
+category: multi-agent
+maturity: recommended
+tags:
+  - multi-agent
+  - context-seeding
+  - agent-runtime
+bundles:
+  - multi-agent
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/hook-context-attachment-injection/SKILL.md
+  codex: agents/codex/skills/hook-context-attachment-injection/SKILL.md
+  claude_code: agents/claude-code/skills/hook-context-attachment-injection/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

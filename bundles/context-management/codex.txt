@@ -6,12 +6,15 @@ agents/codex/skills/autocompact-recursion-guards
 agents/codex/skills/cache-edit-pin-and-replay
 agents/codex/skills/largest-first-context-shedding
 agents/codex/skills/reserved-summary-output-budget
+agents/codex/skills/media-block-compaction-prep
 agents/codex/skills/token-budgeted-compaction-with-reinjection
+agents/codex/skills/reinjected-attachment-pruning-before-summary
 agents/codex/skills/progressive-compaction-prompt
 agents/codex/skills/compactable-tool-whitelist-gating
 agents/codex/skills/time-gap-cache-expiry-microcompact
 agents/codex/skills/turn-scoped-memory-prefetch-with-disposal
 agents/codex/skills/session-memory-first-compaction
 agents/codex/skills/relevant-memory-selection-by-header
+agents/codex/skills/tool-success-aware-memory-suppression
 agents/codex/skills/forked-auto-memory-extraction
 agents/codex/skills/user-input-before-thread-attachments

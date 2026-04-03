@@ -1,0 +1,24 @@
+slug: external-error-preserving-refresh-merge
+name: "External Error Preserving Refresh Merge"
+summary: "Merge refresh-owned diagnostics with externally owned errors so one reload updates its slice without erasing adjacent subsystem failures."
+when_to_use: "Use when a subsystem refresh recomputes its own errors but related diagnostics from other live subsystems must remain visible."
+category: extensions-mcp
+maturity: recommended
+tags:
+  - extensions-mcp
+  - diagnostics
+  - agent-runtime
+bundles:
+  - extensions-mcp
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/external-error-preserving-refresh-merge/SKILL.md
+  codex: agents/codex/skills/external-error-preserving-refresh-merge/SKILL.md
+  claude_code: agents/claude-code/skills/external-error-preserving-refresh-merge/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

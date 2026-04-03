@@ -1,0 +1,24 @@
+slug: stall-to-alert-color-escalation
+name: "Stall-to-Alert Color Escalation"
+summary: "Blend progress colors toward an alert hue as stall intensity rises so stuck work becomes obvious without changing layout."
+when_to_use: "Use when spinners or progress indicators should communicate rising stall severity through color instead of larger warning UI."
+category: terminal-ui
+maturity: recommended
+tags:
+  - terminal-ui
+  - status-feedback
+  - agent-runtime
+bundles:
+  - terminal-ui
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/stall-to-alert-color-escalation/SKILL.md
+  codex: agents/codex/skills/stall-to-alert-color-escalation/SKILL.md
+  claude_code: agents/claude-code/skills/stall-to-alert-color-escalation/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: terminal-ui
+  review_status: curated

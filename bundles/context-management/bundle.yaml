@@ -10,12 +10,15 @@ skills:
   - cache-edit-pin-and-replay
   - largest-first-context-shedding
   - reserved-summary-output-budget
+  - media-block-compaction-prep
   - token-budgeted-compaction-with-reinjection
+  - reinjected-attachment-pruning-before-summary
   - progressive-compaction-prompt
   - compactable-tool-whitelist-gating
   - time-gap-cache-expiry-microcompact
   - turn-scoped-memory-prefetch-with-disposal
   - session-memory-first-compaction
   - relevant-memory-selection-by-header
+  - tool-success-aware-memory-suppression
   - forked-auto-memory-extraction
   - user-input-before-thread-attachments

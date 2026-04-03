@@ -6,6 +6,7 @@ agents/codex/skills/capability-pool-resolution
 agents/codex/skills/required-argument-aware-flag-validation
 agents/codex/skills/idempotent-tool-result-persistence
 agents/codex/skills/preview-first-large-output-messages
+agents/codex/skills/capability-aware-offload-skipping
 agents/codex/skills/modality-preserving-binary-offload
 agents/codex/skills/wire-shape-aligned-budgeting
 agents/codex/skills/tail-preserving-task-output-truncation

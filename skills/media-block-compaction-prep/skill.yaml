@@ -1,0 +1,24 @@
+slug: media-block-compaction-prep
+name: "Media-Block Compaction Prep"
+summary: "Replace heavy media blocks with lightweight placeholders before compaction so summaries stay inside budget without losing structural cues."
+when_to_use: "Use when compaction must summarize a session that contains images, documents, or other heavy user-supplied media blocks."
+category: context-management
+maturity: recommended
+tags:
+  - context-management
+  - compaction
+  - agent-runtime
+bundles:
+  - context-management
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/media-block-compaction-prep/SKILL.md
+  codex: agents/codex/skills/media-block-compaction-prep/SKILL.md
+  claude_code: agents/claude-code/skills/media-block-compaction-prep/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

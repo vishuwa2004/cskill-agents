@@ -1,0 +1,24 @@
+slug: reinjected-attachment-pruning-before-summary
+name: "Reinjected Attachment Pruning Before Summary"
+summary: "Prune attachments that will be regenerated after compaction so the summarizer spends budget on durable context instead."
+when_to_use: "Use when some attachment types are guaranteed to be reintroduced after compaction and should not consume summary tokens twice."
+category: context-management
+maturity: recommended
+tags:
+  - context-management
+  - compaction
+  - attachment-pipeline
+bundles:
+  - context-management
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/reinjected-attachment-pruning-before-summary/SKILL.md
+  codex: agents/codex/skills/reinjected-attachment-pruning-before-summary/SKILL.md
+  claude_code: agents/claude-code/skills/reinjected-attachment-pruning-before-summary/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

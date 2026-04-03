@@ -1,4 +1,6 @@
 agents/codex/skills/additive-agent-tool-surface-construction
+agents/codex/skills/per-agent-skill-listing-dedupe
+agents/codex/skills/hook-context-attachment-injection
 agents/codex/skills/agent-specific-mcp-server-initialization
 agents/codex/skills/namespace-resolved-skill-preloading
 agents/codex/skills/plugin-only-agent-surface-gating

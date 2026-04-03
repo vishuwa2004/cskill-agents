@@ -17,3 +17,4 @@ skills:
   - slash-command-skill-classification-filter
   - budget-aware-skill-listing-formatting
   - local-and-mcp-skill-name-deduplication
+  - per-agent-skill-listing-dedupe

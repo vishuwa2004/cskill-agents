@@ -1,0 +1,24 @@
+slug: semantic-theme-key-rendering
+name: "Semantic Theme-Key Rendering"
+summary: "Resolve semantic color keys through the active palette and contextual overrides before rendering terminal text."
+when_to_use: "Use when terminal components accept theme keys such as warning, success, or muted rather than hardcoded color literals."
+category: terminal-ui
+maturity: recommended
+tags:
+  - terminal-ui
+  - theming
+  - agent-runtime
+bundles:
+  - terminal-ui
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/semantic-theme-key-rendering/SKILL.md
+  codex: agents/codex/skills/semantic-theme-key-rendering/SKILL.md
+  claude_code: agents/claude-code/skills/semantic-theme-key-rendering/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: terminal-ui
+  review_status: curated

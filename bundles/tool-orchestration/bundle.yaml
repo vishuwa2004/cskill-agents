@@ -10,6 +10,7 @@ skills:
   - required-argument-aware-flag-validation
   - idempotent-tool-result-persistence
   - preview-first-large-output-messages
+  - capability-aware-offload-skipping
   - modality-preserving-binary-offload
   - wire-shape-aligned-budgeting
   - tail-preserving-task-output-truncation
