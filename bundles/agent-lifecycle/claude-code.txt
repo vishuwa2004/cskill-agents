@@ -1,0 +1,8 @@
+agents/claude-code/skills/additive-agent-tool-surface-construction
+agents/claude-code/skills/agent-specific-mcp-server-initialization
+agents/claude-code/skills/permission-overlay-inheritance
+agents/claude-code/skills/lifecycle-scoped-resource-cleanup
+agents/claude-code/skills/append-only-sidechain-transcripts
+agents/claude-code/skills/subagent-metrics-bridging
+agents/claude-code/skills/prompt-context-handoff-for-agent-runtime
+agents/claude-code/skills/trusted-frontmatter-gating

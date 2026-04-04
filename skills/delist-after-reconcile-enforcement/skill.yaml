@@ -10,6 +10,7 @@ tags:
   - agent-runtime
 bundles:
   - extensions-mcp
+  - extension-sync
 targets:
   - universal
   - codex-compatible

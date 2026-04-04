@@ -9,7 +9,9 @@ tags:
   - skill-listing
   - agent-runtime
 bundles:
+  - command-surfaces
   - multi-agent
+  - fork-integrity
 targets:
   - universal
   - codex-compatible

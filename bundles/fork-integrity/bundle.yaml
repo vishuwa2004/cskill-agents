@@ -1,0 +1,12 @@
+id: fork-integrity
+name: "Fork Integrity"
+description: "Cache-stable forks, isolated skill runs, transcript hygiene, and subagent resume consistency."
+skills:
+  - cache-prefix-stability-for-subagents
+  - cache-identical-fork-prefix-construction
+  - fork-child-directive-guardrails
+  - forked-skill-execution-with-isolated-context
+  - forked-auto-memory-extraction
+  - orphaned-tool-call-sanitizer
+  - namespace-resolved-skill-preloading
+  - per-agent-skill-listing-dedupe

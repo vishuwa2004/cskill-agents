@@ -1,6 +1,6 @@
 # Curated Skill Index
 
-This repo ships 104 curated skills selected for building or improving agentic coding CLIs, terminal tools, and multi-agent runtimes.
+This repo ships 108 curated skills selected for building or improving agentic coding CLIs, terminal tools, and multi-agent runtimes.
 
 ## Starter Bundle
 
@@ -11,6 +11,7 @@ This repo ships 104 curated skills selected for building or improving agentic co
 - [Lazy Heavy Command Shims](../skills/lazy-heavy-command-shims/SKILL.md): Keep heavyweight commands discoverable through lightweight shims that import the real implementation only on execution.
 - [Dynamic Skill Insertion Before Builtins](../skills/dynamic-skill-insertion-before-builtins/SKILL.md): Merge runtime-discovered commands into an existing command registry by deduping them against the enabled base surface and inserting them at a stable boundary before built-in commands.
 - [Layered Command Cache Invalidation](../skills/layered-command-cache-invalidation/SKILL.md): Clear every memoized layer in a command or skill pipeline so dynamic updates invalidate outer derived views as well as inner source caches.
+- [CLI Command Surface Audit](../skills/cli-command-surface-audit/SKILL.md): Audit a command surface end to end so registration, discoverability, permissions, and execution all line up before shipping.
 - [Descriptive Skill Surface Admission](../skills/descriptive-skill-surface-admission/SKILL.md): Use source-aware admission rules so trusted local skills can surface automatically while plugin or MCP-provided entries must supply explicit descriptive metadata.
 - [Bundled-and-MCP Turn-Zero Skill Filter](../skills/bundled-and-mcp-turn-zero-skill-filter/SKILL.md): Shrink first-turn skill listings to bundled and MCP-backed high-signal sources, with a deterministic bundled-only fallback if still too large.
 - [Concurrency-Safe Tool Batching](../skills/concurrency-safe-tool-batching/SKILL.md): Group tool calls into concurrency-safe batches to run read-only calls in parallel while serializing non-read-only work.
@@ -59,6 +60,7 @@ Skills for command registries, skill admission, discovery, and capability surfac
 - [Memoized Command Source Aggregation](../skills/memoized-command-source-aggregation/SKILL.md): Load independent command sources in parallel, then memoize the merged registry by cwd so repeated lookups stay cheap and ordered.
 - [Portable Skill Loader Progressive Disclosure](../skills/portable-skill-loader-progressive-disclosure/SKILL.md): Keep the universal skill compact yet discoverable by loading minimal frontmatter first and heavy content on demand.
 - [Project-Root Scoped Local Skill Loading](../skills/project-root-scoped-local-skill-loading/SKILL.md): Resolve a stable project root first, then load local skills relative to that scope before combining them with other sources.
+- [Skill Registry Composition and Feature Gating](../skills/skill-registry-composition-and-feature-gating/SKILL.md): Compose skill registries in fixed phases with explicit feature gates so merged command surfaces stay deterministic and cheap to refresh.
 - [Slash-Command Skill Classification Filter](../skills/slash-command-skill-classification-filter/SKILL.md): Derive a slash-command skill surface from a broader prompt-command registry by requiring descriptive metadata, excluding builtins, and admitting only a controlled set of origins plus explicit user-only commands.
 - [Turn-Zero vs Inter-Turn Skill Discovery Split](../skills/turn-zero-vs-inter-turn-skill-discovery-split/SKILL.md): Block only the first discovery pass, then overlap later discovery with tool execution so streaming turns stay responsive.
 
@@ -123,6 +125,7 @@ Skills for child agents, forked execution, permission inheritance, and lifecycle
 - [Orphaned Tool Call Sanitizer](../skills/orphaned-tool-call-sanitizer/SKILL.md): Remove assistant messages that reference tools without recorded results before feeding the history back into runAgent.
 - [Per-Agent Skill Listing Dedupe](../skills/per-agent-skill-listing-dedupe/SKILL.md): Track announced skills per agent or thread so each child agent gets its own first-turn capability listing instead of inheriting another thread's seen state.
 - [Permission Overlay Inheritance](../skills/permission-overlay-inheritance/SKILL.md): Layer child permission rules over parent session policy without dropping root-level grants or mutating shared state.
+- [Prompt-Context Handoff for Agent Runtime](../skills/prompt-context-handoff-for-agent-runtime/SKILL.md): Package prompt, identity, and runtime constraints into one explicit handoff so child agents start with the right context and no accidental leakage.
 - [Subagent Metrics Bridging](../skills/subagent-metrics-bridging/SKILL.md): Connect async subagent streams to progress UI, analytics, and notifications from one finalized lifecycle snapshot.
 - [Trusted Frontmatter Gating](../skills/trusted-frontmatter-gating/SKILL.md): Gate frontmatter MCP servers, hooks, and skills behind admin trust when plugin-only or hook-only modes are active.
 
@@ -168,6 +171,7 @@ Skills for remote-safe command surfaces, transport contracts, and bridge gating.
 - [Nonblocking Post-Connect Capability Broadcast](../skills/nonblocking-post-connect-capability-broadcast/SKILL.md): Mark bridge sessions ready first, then send optional capability metadata asynchronously without delaying readiness.
 - [Privacy-Redacted REPL Bridge System Init](../skills/privacy-redacted-repl-bridge-system-init/SKILL.md): Reuse one `system/init` payload shape across trusted and remote transports, but redact tool, MCP, and plugin metadata when the bridge path would leak local integrations or filesystem paths.
 - [Shared System Init Shape Parity](../skills/shared-system-init-shape-parity/SKILL.md): Centralize `system/init` or capability payload construction in one builder so multiple transports emit identical schemas and only vary inputs or delivery.
+- [Transport Error Normalization and Retry Policy](../skills/transport-error-normalization-and-retry-policy/SKILL.md): Normalize transport failures into one retry policy so streaming bridges, sockets, and remote clients fail predictably instead of improvising recovery.
 - [Type Tiered Bridge Command Gating](../skills/type-tiered-bridge-command-gating/SKILL.md): Gate bridge-executed slash commands by command type first: block local-jsx UI commands, allow prompt commands by construction, and require an explicit allowlist for plain local commands.
 - [User-Invocable Capability Serialization](../skills/user-invocable-capability-serialization/SKILL.md): Serialize announced command and skill surfaces from a shared capability shape, excluding entries explicitly marked non-user-invocable.
 

@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - context-management
+  - compaction-core
 targets:
   - universal
   - codex-compatible

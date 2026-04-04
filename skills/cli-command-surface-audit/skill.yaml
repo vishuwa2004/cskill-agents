@@ -1,0 +1,25 @@
+slug: cli-command-surface-audit
+name: "CLI Command Surface Audit"
+summary: "Audit a command surface end to end so registration, discoverability, permissions, and execution all line up before shipping."
+when_to_use: "Use when adding, migrating, or debugging commands or slash-command skills in a coding CLI with multiple registries or mode filters."
+category: command-surfaces
+maturity: recommended
+tags:
+  - command-surfaces
+  - agent-runtime
+  - cli
+bundles:
+  - command-surfaces
+  - skill-discovery
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/cli-command-surface-audit/SKILL.md
+  codex: agents/codex/skills/cli-command-surface-audit/SKILL.md
+  claude_code: agents/claude-code/skills/cli-command-surface-audit/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

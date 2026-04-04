@@ -10,6 +10,7 @@ tags:
   - latency
 bundles:
   - command-surfaces
+  - skill-discovery
 targets:
   - universal
   - codex-compatible

@@ -1,0 +1,7 @@
+agents/codex/skills/portable-skill-loader-progressive-disclosure
+agents/codex/skills/project-root-scoped-local-skill-loading
+agents/codex/skills/memoized-command-source-aggregation
+agents/codex/skills/feature-gated-command-registry-loading
+agents/codex/skills/lazy-heavy-command-shims
+agents/codex/skills/layered-command-cache-invalidation
+agents/codex/skills/skill-registry-composition-and-feature-gating

@@ -10,6 +10,7 @@ tags:
   - attachment-pipeline
 bundles:
   - context-management
+  - memory-signals
 targets:
   - universal
   - codex-compatible

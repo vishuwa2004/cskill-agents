@@ -9,6 +9,7 @@ tags:
   - agent-runtime
 bundles:
   - tool-orchestration
+  - output-budgeting
 targets:
   - universal
   - codex-compatible

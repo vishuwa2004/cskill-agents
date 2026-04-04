@@ -11,6 +11,7 @@ tags:
 bundles:
   - extensions-mcp
   - safety-worktrees
+  - extension-sync
 targets:
   - universal
   - codex-compatible

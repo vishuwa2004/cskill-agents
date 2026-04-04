@@ -1,0 +1,25 @@
+slug: prompt-context-handoff-for-agent-runtime
+name: "Prompt-Context Handoff for Agent Runtime"
+summary: "Package prompt, identity, and runtime constraints into one explicit handoff so child agents start with the right context and no accidental leakage."
+when_to_use: "Use when a parent agent or workflow must launch a child agent with a prompt plus selected runtime state, constraints, and capabilities."
+category: multi-agent
+maturity: recommended
+tags:
+  - multi-agent
+  - agent-runtime
+  - context-management
+bundles:
+  - multi-agent
+  - agent-lifecycle
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/prompt-context-handoff-for-agent-runtime/SKILL.md
+  codex: agents/codex/skills/prompt-context-handoff-for-agent-runtime/SKILL.md
+  claude_code: agents/claude-code/skills/prompt-context-handoff-for-agent-runtime/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

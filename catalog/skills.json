@@ -2,8 +2,8 @@
   {
     "slug": "additive-agent-tool-surface-construction",
     "name": "Additive Agent Tool Surface Construction",
-    "summary": "Merge agent-specific tool sets (MCP clients + fetched tools) into the parent context without disrupting the parent\u2019s existing pool.",
-    "when_to_use": "Use this when bringing tools from newly connected MCP servers into the agent\u2019s tool pool while preserving the parent context.",
+    "summary": "Merge agent-specific tool sets (MCP clients + fetched tools) into the parent context without disrupting the parent’s existing pool.",
+    "when_to_use": "Use this when bringing tools from newly connected MCP servers into the agent’s tool pool while preserving the parent context.",
     "category": "multi-agent",
     "maturity": "core",
     "tags": [
@@ -13,7 +13,8 @@
     ],
     "bundles": [
       "starter",
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -34,7 +35,7 @@
   {
     "slug": "agent-specific-mcp-server-initialization",
     "name": "Agent-Specific MCP Server Initialization",
-    "summary": "Connect each agent\u2019s frontmatter MCP servers safely and tear them down without leaking clients, while honoring plugin-only guards.",
+    "summary": "Connect each agent’s frontmatter MCP servers safely and tear them down without leaking clients, while honoring plugin-only guards.",
     "when_to_use": "Load this skill when an agent defines extra MCP servers in its frontmatter and those clients must be joined to the parent session.",
     "category": "multi-agent",
     "maturity": "recommended",
@@ -43,7 +44,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -107,7 +109,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -137,7 +140,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -167,7 +171,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -228,7 +233,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -260,7 +266,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -281,7 +288,7 @@
   {
     "slug": "autocompact-recursion-guards",
     "name": "Autocompact Recursion Guards",
-    "summary": "Block autocompact from running in recursive contexts so forks and helpers don\u2019t deadlock.",
+    "summary": "Block autocompact from running in recursive contexts so forks and helpers don’t deadlock.",
     "when_to_use": "Apply when auto-compacting logic runs inside recursive agents (session memory, compact helpers, context collapse) and must avoid deadlocking by re-entering itself.",
     "category": "context-management",
     "maturity": "recommended",
@@ -290,7 +297,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -321,7 +329,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -353,7 +362,8 @@
     ],
     "bundles": [
       "starter",
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -383,7 +393,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -476,7 +487,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -507,7 +519,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -537,7 +550,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -567,7 +581,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -599,7 +614,8 @@
     ],
     "bundles": [
       "extensions-mcp",
-      "safety-worktrees"
+      "safety-worktrees",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -629,7 +645,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -713,7 +730,7 @@
   {
     "slug": "capability-pool-resolution",
     "name": "Capability Pool Resolution",
-    "summary": "Resolve an agent\u2019s tool intent and disallowed lists into the actual pool the agent can use, honoring wildcard, async, and teammate allowances.",
+    "summary": "Resolve an agent’s tool intent and disallowed lists into the actual pool the agent can use, honoring wildcard, async, and teammate allowances.",
     "when_to_use": "Apply this pattern when an agent declares requested tools/disallowedTools and you must compute the exact capabilities available to that agent thread.",
     "category": "tool-orchestration",
     "maturity": "recommended",
@@ -752,7 +769,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -774,7 +792,7 @@
     "slug": "circular-safe-tool-registry-loading",
     "name": "Circular-Safe Tool Registry Loading",
     "summary": "Safely assemble the tool registry when optional tools have circular dependencies or heavy side effects.",
-    "when_to_use": "Use when tools reference each other (e.g., `TeamCreateTool` \u2194 `tools.ts`) or only exist under feature flags, and you still need a single exhaustive registry.",
+    "when_to_use": "Use when tools reference each other (e.g., `TeamCreateTool` ↔ `tools.ts`) or only exist under feature flags, and you still need a single exhaustive registry.",
     "category": "tool-orchestration",
     "maturity": "recommended",
     "tags": [
@@ -801,6 +819,38 @@
     }
   },
   {
+    "slug": "cli-command-surface-audit",
+    "name": "CLI Command Surface Audit",
+    "summary": "Audit a command surface end to end so registration, discoverability, permissions, and execution all line up before shipping.",
+    "when_to_use": "Use when adding, migrating, or debugging commands or slash-command skills in a coding CLI with multiple registries or mode filters.",
+    "category": "command-surfaces",
+    "maturity": "recommended",
+    "tags": [
+      "command-surfaces",
+      "agent-runtime",
+      "cli"
+    ],
+    "bundles": [
+      "command-surfaces",
+      "skill-discovery"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/cli-command-surface-audit/SKILL.md",
+      "codex": "agents/codex/skills/cli-command-surface-audit/SKILL.md",
+      "claude_code": "agents/claude-code/skills/cli-command-surface-audit/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "compactable-tool-whitelist-gating",
     "name": "Compactable Tool Whitelist Gating",
     "summary": "Only allow cached microcompact to delete tool results for a vetted, pre-gated whitelist of tool names.",
@@ -812,7 +862,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -876,7 +927,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -906,7 +958,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -936,7 +989,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -966,7 +1020,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",
@@ -998,7 +1053,8 @@
     ],
     "bundles": [
       "starter",
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -1029,7 +1085,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -1061,7 +1118,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -1124,7 +1182,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -1156,7 +1215,8 @@
     ],
     "bundles": [
       "starter",
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -1188,7 +1248,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -1249,7 +1310,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1282,7 +1344,8 @@
     "bundles": [
       "starter",
       "multi-agent",
-      "context-management"
+      "context-management",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1312,7 +1375,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1342,7 +1406,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -1405,7 +1470,8 @@
     ],
     "bundles": [
       "starter",
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",
@@ -1436,7 +1502,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -1500,7 +1567,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -1532,7 +1600,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -1594,7 +1663,8 @@
     ],
     "bundles": [
       "starter",
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -1624,7 +1694,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -1656,7 +1727,8 @@
     ],
     "bundles": [
       "command-surfaces",
-      "extensions-mcp"
+      "extensions-mcp",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -1719,7 +1791,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -1749,7 +1822,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",
@@ -1780,7 +1854,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1811,7 +1886,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -1873,7 +1949,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1904,7 +1981,9 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "command-surfaces",
+      "multi-agent",
+      "fork-integrity"
     ],
     "targets": [
       "universal",
@@ -1936,7 +2015,8 @@
     ],
     "bundles": [
       "starter",
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -2032,7 +2112,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -2093,7 +2174,8 @@
       "output-budgeting"
     ],
     "bundles": [
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",
@@ -2125,7 +2207,8 @@
     ],
     "bundles": [
       "starter",
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -2156,7 +2239,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -2218,7 +2302,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -2280,7 +2365,8 @@
     ],
     "bundles": [
       "starter",
-      "command-surfaces"
+      "command-surfaces",
+      "registry-bootstrap"
     ],
     "targets": [
       "universal",
@@ -2295,6 +2381,38 @@
     "source": {
       "type": "reviewed-implementation",
       "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
+    "slug": "prompt-context-handoff-for-agent-runtime",
+    "name": "Prompt-Context Handoff for Agent Runtime",
+    "summary": "Package prompt, identity, and runtime constraints into one explicit handoff so child agents start with the right context and no accidental leakage.",
+    "when_to_use": "Use when a parent agent or workflow must launch a child agent with a prompt plus selected runtime state, constraints, and capabilities.",
+    "category": "multi-agent",
+    "maturity": "recommended",
+    "tags": [
+      "multi-agent",
+      "agent-runtime",
+      "context-management"
+    ],
+    "bundles": [
+      "multi-agent",
+      "agent-lifecycle"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/prompt-context-handoff-for-agent-runtime/SKILL.md",
+      "codex": "agents/codex/skills/prompt-context-handoff-for-agent-runtime/SKILL.md",
+      "claude_code": "agents/claude-code/skills/prompt-context-handoff-for-agent-runtime/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "multi-agent",
       "review_status": "curated"
     }
   },
@@ -2341,7 +2459,8 @@
       "attachment-pipeline"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -2372,7 +2491,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -2436,7 +2556,8 @@
     ],
     "bundles": [
       "starter",
-      "tool-orchestration"
+      "tool-orchestration",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -2498,7 +2619,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "safety-worktrees"
+      "safety-worktrees",
+      "workspace-safety"
     ],
     "targets": [
       "universal",
@@ -2559,7 +2681,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -2622,7 +2745,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -2654,7 +2778,8 @@
     ],
     "bundles": [
       "starter",
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -2673,6 +2798,38 @@
     }
   },
   {
+    "slug": "skill-registry-composition-and-feature-gating",
+    "name": "Skill Registry Composition and Feature Gating",
+    "summary": "Compose skill registries in fixed phases with explicit feature gates so merged command surfaces stay deterministic and cheap to refresh.",
+    "when_to_use": "Use when skills or prompt commands come from multiple sources and optional features must control which sources load and in what order.",
+    "category": "command-surfaces",
+    "maturity": "recommended",
+    "tags": [
+      "command-surfaces",
+      "agent-runtime",
+      "registry-bootstrap"
+    ],
+    "bundles": [
+      "command-surfaces",
+      "registry-bootstrap"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/skill-registry-composition-and-feature-gating/SKILL.md",
+      "codex": "agents/codex/skills/skill-registry-composition-and-feature-gating/SKILL.md",
+      "claude_code": "agents/claude-code/skills/skill-registry-composition-and-feature-gating/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "command-surfaces",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "slash-command-skill-classification-filter",
     "name": "Slash-Command Skill Classification Filter",
     "summary": "Derive a slash-command skill surface from a broader prompt-command registry by requiring descriptive metadata, excluding builtins, and admitting only a controlled set of origins plus explicit user-only commands.",
@@ -2684,7 +2841,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -2746,7 +2904,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -2777,7 +2936,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -2799,7 +2959,7 @@
     "slug": "tail-preserving-task-output-truncation",
     "name": "Tail-Preserving Task Output Truncation",
     "summary": "Persist tool outputs alongside metadata and truncate only the preview, ensuring the header points back to the persisted replica.",
-    "when_to_use": "Use this when a task produces output larger than the session\u2019s configured limit and you need to keep a concise preview plus a persistent archive.",
+    "when_to_use": "Use this when a task produces output larger than the session’s configured limit and you need to keep a concise preview plus a persistent archive.",
     "category": "tool-orchestration",
     "maturity": "recommended",
     "tags": [
@@ -2807,7 +2967,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",
@@ -2837,7 +2998,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "extensions-mcp"
+      "extensions-mcp",
+      "extension-sync"
     ],
     "targets": [
       "universal",
@@ -2867,7 +3029,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -2899,7 +3062,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "compaction-core"
     ],
     "targets": [
       "universal",
@@ -2930,7 +3094,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -2949,10 +3114,42 @@
     }
   },
   {
+    "slug": "transport-error-normalization-and-retry-policy",
+    "name": "Transport Error Normalization and Retry Policy",
+    "summary": "Normalize transport failures into one retry policy so streaming bridges, sockets, and remote clients fail predictably instead of improvising recovery.",
+    "when_to_use": "Use when a remote or bridge transport can fail in multiple ways and callers need one consistent rule for retrying, surfacing, or terminating.",
+    "category": "remote-bridge",
+    "maturity": "recommended",
+    "tags": [
+      "remote-bridge",
+      "agent-runtime",
+      "transport"
+    ],
+    "bundles": [
+      "remote-bridge",
+      "bridge-privacy"
+    ],
+    "targets": [
+      "universal",
+      "codex-compatible",
+      "claude-code-compatible"
+    ],
+    "paths": {
+      "universal": "skills/transport-error-normalization-and-retry-policy/SKILL.md",
+      "codex": "agents/codex/skills/transport-error-normalization-and-retry-policy/SKILL.md",
+      "claude_code": "agents/claude-code/skills/transport-error-normalization-and-retry-policy/SKILL.md"
+    },
+    "source": {
+      "type": "reviewed-implementation",
+      "pattern_family": "remote-bridge",
+      "review_status": "curated"
+    }
+  },
+  {
     "slug": "trusted-frontmatter-gating",
     "name": "Trusted Frontmatter Gating",
     "summary": "Gate frontmatter MCP servers, hooks, and skills behind admin trust when plugin-only or hook-only modes are active.",
-    "when_to_use": "Apply this pattern when you are about to honor MCP servers, hooks, or skill preloads declared in an agent\u2019s frontmatter while the session may be locked to plugin-only/customized trust settings.",
+    "when_to_use": "Apply this pattern when you are about to honor MCP servers, hooks, or skill preloads declared in an agent’s frontmatter while the session may be locked to plugin-only/customized trust settings.",
     "category": "multi-agent",
     "maturity": "recommended",
     "tags": [
@@ -2960,7 +3157,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "multi-agent"
+      "multi-agent",
+      "agent-lifecycle"
     ],
     "targets": [
       "universal",
@@ -2992,7 +3190,8 @@
     ],
     "bundles": [
       "starter",
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -3023,7 +3222,8 @@
       "latency"
     ],
     "bundles": [
-      "command-surfaces"
+      "command-surfaces",
+      "skill-discovery"
     ],
     "targets": [
       "universal",
@@ -3053,7 +3253,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -3084,7 +3285,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "context-management"
+      "context-management",
+      "memory-signals"
     ],
     "targets": [
       "universal",
@@ -3114,7 +3316,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "remote-bridge"
+      "remote-bridge",
+      "bridge-privacy"
     ],
     "targets": [
       "universal",
@@ -3165,7 +3368,7 @@
   {
     "slug": "wire-shape-aligned-budgeting",
     "name": "Wire-Shape Aligned Budgeting",
-    "summary": "Keep each wire message\u2019s aggregate tool_result size within the configured budget by compacting the largest fresh results first.",
+    "summary": "Keep each wire message’s aggregate tool_result size within the configured budget by compacting the largest fresh results first.",
     "when_to_use": "Apply this when building user messages that include multiple `tool_result` blocks to ensure the total stays under `MAX_TOOL_RESULTS_PER_MESSAGE_CHARS` before the API call.",
     "category": "tool-orchestration",
     "maturity": "recommended",
@@ -3174,7 +3377,8 @@
       "agent-runtime"
     ],
     "bundles": [
-      "tool-orchestration"
+      "tool-orchestration",
+      "output-budgeting"
     ],
     "targets": [
       "universal",

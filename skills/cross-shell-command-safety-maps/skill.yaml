@@ -9,6 +9,7 @@ tags:
   - agent-runtime
 bundles:
   - safety-worktrees
+  - workspace-safety
 targets:
   - universal
   - codex-compatible

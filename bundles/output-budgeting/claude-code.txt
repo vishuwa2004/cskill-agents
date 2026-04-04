@@ -1,0 +1,6 @@
+agents/claude-code/skills/idempotent-tool-result-persistence
+agents/claude-code/skills/preview-first-large-output-messages
+agents/claude-code/skills/modality-preserving-binary-offload
+agents/claude-code/skills/tail-preserving-task-output-truncation
+agents/claude-code/skills/wire-shape-aligned-budgeting
+agents/claude-code/skills/decision-fate-freezing

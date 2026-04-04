@@ -10,6 +10,7 @@ tags:
   - agent-runtime
 bundles:
   - multi-agent
+  - agent-lifecycle
 targets:
   - universal
   - codex-compatible

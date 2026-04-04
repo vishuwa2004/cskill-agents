@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - safety-worktrees
+  - workspace-safety
 targets:
   - universal
   - codex-compatible

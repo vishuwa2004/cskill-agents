@@ -1,0 +1,11 @@
+id: registry-bootstrap
+name: "Registry Bootstrap"
+description: "Root resolution, registry composition, feature-gated loading, and cache-safe startup assembly."
+skills:
+  - portable-skill-loader-progressive-disclosure
+  - project-root-scoped-local-skill-loading
+  - memoized-command-source-aggregation
+  - feature-gated-command-registry-loading
+  - lazy-heavy-command-shims
+  - layered-command-cache-invalidation
+  - skill-registry-composition-and-feature-gating

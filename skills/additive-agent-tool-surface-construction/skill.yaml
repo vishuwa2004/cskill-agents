@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - multi-agent
+  - agent-lifecycle
 targets:
   - universal
   - codex-compatible

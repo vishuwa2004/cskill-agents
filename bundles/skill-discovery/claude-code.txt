@@ -1,0 +1,8 @@
+agents/claude-code/skills/descriptive-skill-surface-admission
+agents/claude-code/skills/bundled-and-mcp-turn-zero-skill-filter
+agents/claude-code/skills/turn-zero-vs-inter-turn-skill-discovery-split
+agents/claude-code/skills/initial-vs-dynamic-skill-listing-batching
+agents/claude-code/skills/mcp-skill-vs-prompt-discovery-filtering
+agents/claude-code/skills/local-and-mcp-skill-name-deduplication
+agents/claude-code/skills/slash-command-skill-classification-filter
+agents/claude-code/skills/cli-command-surface-audit

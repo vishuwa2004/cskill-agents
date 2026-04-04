@@ -12,6 +12,7 @@ bundles:
   - starter
   - multi-agent
   - context-management
+  - fork-integrity
 targets:
   - universal
   - codex-compatible

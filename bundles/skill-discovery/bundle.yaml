@@ -1,0 +1,12 @@
+id: skill-discovery
+name: "Skill Discovery"
+description: "High-signal admission, filtering, listing, and first-turn discovery for skill surfaces."
+skills:
+  - descriptive-skill-surface-admission
+  - bundled-and-mcp-turn-zero-skill-filter
+  - turn-zero-vs-inter-turn-skill-discovery-split
+  - initial-vs-dynamic-skill-listing-batching
+  - mcp-skill-vs-prompt-discovery-filtering
+  - local-and-mcp-skill-name-deduplication
+  - slash-command-skill-classification-filter
+  - cli-command-surface-audit

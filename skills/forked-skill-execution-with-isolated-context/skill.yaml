@@ -9,6 +9,7 @@ tags:
   - agent-runtime
 bundles:
   - multi-agent
+  - fork-integrity
 targets:
   - universal
   - codex-compatible

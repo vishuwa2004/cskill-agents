@@ -1,0 +1,7 @@
+agents/codex/skills/turn-scoped-memory-prefetch-with-disposal
+agents/codex/skills/session-memory-first-compaction
+agents/codex/skills/relevant-memory-selection-by-header
+agents/codex/skills/tool-success-aware-memory-suppression
+agents/codex/skills/reinjected-attachment-pruning-before-summary
+agents/codex/skills/user-input-before-thread-attachments
+agents/codex/skills/conversation-engine-persistent-session-state

@@ -1,0 +1,25 @@
+slug: transport-error-normalization-and-retry-policy
+name: "Transport Error Normalization and Retry Policy"
+summary: "Normalize transport failures into one retry policy so streaming bridges, sockets, and remote clients fail predictably instead of improvising recovery."
+when_to_use: "Use when a remote or bridge transport can fail in multiple ways and callers need one consistent rule for retrying, surfacing, or terminating."
+category: remote-bridge
+maturity: recommended
+tags:
+  - remote-bridge
+  - agent-runtime
+  - transport
+bundles:
+  - remote-bridge
+  - bridge-privacy
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/transport-error-normalization-and-retry-policy/SKILL.md
+  codex: agents/codex/skills/transport-error-normalization-and-retry-policy/SKILL.md
+  claude_code: agents/claude-code/skills/transport-error-normalization-and-retry-policy/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: remote-bridge
+  review_status: curated

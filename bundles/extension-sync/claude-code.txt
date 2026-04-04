@@ -1,0 +1,10 @@
+agents/claude-code/skills/auto-refresh-after-new-plugin-sources
+agents/claude-code/skills/background-marketplace-reconciliation
+agents/claude-code/skills/canonical-root-marketplace-path-normalization
+agents/claude-code/skills/delist-after-reconcile-enforcement
+agents/claude-code/skills/external-error-preserving-refresh-merge
+agents/claude-code/skills/headless-interactive-reconcile-parity
+agents/claude-code/skills/progress-event-state-bridge
+agents/claude-code/skills/seed-before-diff-marketplace-registration
+agents/claude-code/skills/steady-state-sidecar-sync
+agents/claude-code/skills/three-layer-extension-sync

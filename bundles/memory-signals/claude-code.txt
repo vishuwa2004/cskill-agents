@@ -1,0 +1,7 @@
+agents/claude-code/skills/turn-scoped-memory-prefetch-with-disposal
+agents/claude-code/skills/session-memory-first-compaction
+agents/claude-code/skills/relevant-memory-selection-by-header
+agents/claude-code/skills/tool-success-aware-memory-suppression
+agents/claude-code/skills/reinjected-attachment-pruning-before-summary
+agents/claude-code/skills/user-input-before-thread-attachments
+agents/claude-code/skills/conversation-engine-persistent-session-state

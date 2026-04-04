@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - context-management
+  - memory-signals
 targets:
   - universal
   - codex-compatible

@@ -10,6 +10,7 @@ tags:
   - agent-runtime
 bundles:
   - context-management
+  - compaction-core
 targets:
   - universal
   - codex-compatible

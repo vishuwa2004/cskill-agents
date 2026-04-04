@@ -1,0 +1,8 @@
+agents/claude-code/skills/cache-prefix-stability-for-subagents
+agents/claude-code/skills/cache-identical-fork-prefix-construction
+agents/claude-code/skills/fork-child-directive-guardrails
+agents/claude-code/skills/forked-skill-execution-with-isolated-context
+agents/claude-code/skills/forked-auto-memory-extraction
+agents/claude-code/skills/orphaned-tool-call-sanitizer
+agents/claude-code/skills/namespace-resolved-skill-preloading
+agents/claude-code/skills/per-agent-skill-listing-dedupe

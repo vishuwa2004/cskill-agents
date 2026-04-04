@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - remote-bridge
+  - bridge-privacy
 targets:
   - universal
   - codex-compatible

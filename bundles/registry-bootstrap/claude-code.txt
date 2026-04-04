@@ -1,0 +1,7 @@
+agents/claude-code/skills/portable-skill-loader-progressive-disclosure
+agents/claude-code/skills/project-root-scoped-local-skill-loading
+agents/claude-code/skills/memoized-command-source-aggregation
+agents/claude-code/skills/feature-gated-command-registry-loading
+agents/claude-code/skills/lazy-heavy-command-shims
+agents/claude-code/skills/layered-command-cache-invalidation
+agents/claude-code/skills/skill-registry-composition-and-feature-gating

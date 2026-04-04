@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - command-surfaces
+  - skill-discovery
 targets:
   - universal
   - codex-compatible

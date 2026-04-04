@@ -11,6 +11,7 @@ tags:
 bundles:
   - starter
   - tool-orchestration
+  - output-budgeting
 targets:
   - universal
   - codex-compatible

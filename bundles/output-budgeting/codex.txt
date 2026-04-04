@@ -1,0 +1,6 @@
+agents/codex/skills/idempotent-tool-result-persistence
+agents/codex/skills/preview-first-large-output-messages
+agents/codex/skills/modality-preserving-binary-offload
+agents/codex/skills/tail-preserving-task-output-truncation
+agents/codex/skills/wire-shape-aligned-budgeting
+agents/codex/skills/decision-fate-freezing

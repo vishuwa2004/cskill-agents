@@ -1,0 +1,10 @@
+id: output-budgeting
+name: "Output Budgeting"
+description: "Tool result persistence, previews, truncation, and budget-aware output shaping."
+skills:
+  - idempotent-tool-result-persistence
+  - preview-first-large-output-messages
+  - modality-preserving-binary-offload
+  - tail-preserving-task-output-truncation
+  - wire-shape-aligned-budgeting
+  - decision-fate-freezing

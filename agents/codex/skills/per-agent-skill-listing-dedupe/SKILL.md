@@ -1,27 +1,27 @@
 ---
 name: per-agent-skill-listing-dedupe
-description: "Keep skill-listing deltas scoped per agent or thread so each new worker gets its own first announcement surface."
+description: "Keep skill-listing deltas scoped per agent or thread so each agent gets its own first-turn announcement surface."
 metadata:
   author: ychampion
 ---
 
 # SKILL: Per-Agent Skill Listing Dedupe
-**Domain:** multi-agent
-**Trigger:** Use when multiple agents share one runtime but each thread should receive its own first-turn skill listing.
-**Source Pattern:** Distilled from reviewed agent-scoped announcement tracking patterns.
+**Domain:** attachment-pipeline
+**Trigger:** Use when a multi-agent runtime must announce new skills or capabilities without one thread's deltas erasing another thread's initial listing.
+**Source Pattern:** Distilled from reviewed per-agent capability-announcement tracking implementations.
 
 ## Core Method
-Track which skill names were already announced separately for each agent or thread instead of globally. Give the main thread a stable sentinel key and every spawned agent its own real key, then compute deltas against that thread-local set. This preserves first-turn discovery for new agents without re-announcing unchanged inventories to threads that already saw them.
+Track which skill names were already sent to each agent separately rather than globally. Each agent or thread gets its own seen-set keyed by a stable agent identity, so the main thread announcing a listing does not make every subagent believe it already saw the same surface. When building the delta list for a given agent, compare only against that agent's set and update that set after sending.
 
 ## Key Rules
-- Maintain one seen-set per logical agent or thread, including a stable slot for the main thread.
-- Compare outgoing listing deltas against the thread-local set, not a global union of all announced skills.
-- Update the thread-local set immediately after emitting new listings so later deltas remain accurate.
+- Store a distinct seen-set per agent or thread, including a stable identity for the main thread.
+- Filter outgoing skill deltas against the target agent's seen-set, not a global pool.
+- Keep the per-agent seen-set alive for the lifetime of that agent so resumes and follow-up turns reuse its own state.
+- Update the agent's seen-set immediately after sending new skills so later deltas stay accurate.
 
 ## Example Application
-If a parent session already announced available skills, a newly spawned review agent can still receive its own first-turn listing because its thread-local seen-set starts empty.
+If a subagent is spawned in the middle of a long-running coding session, start it with its own empty seen-set. Even though the main thread already announced the skill surface, the subagent still gets a proper first-turn listing because its own history starts blank.
 
 ## Anti-Patterns (What NOT to do)
-- Do not keep a single global seen-set for every agent.
-- Do not let one agent's announcement state leak into another's.
-- Do not derive main-thread keys inconsistently across reads and writes.
+- Do not keep one global seen-set; that makes every new agent believe everything was already announced.
+- Do not let one agent reuse another agent's seen-set; cross-agent sharing collapses the whole point of per-thread deltas.

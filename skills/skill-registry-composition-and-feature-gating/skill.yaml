@@ -1,0 +1,25 @@
+slug: skill-registry-composition-and-feature-gating
+name: "Skill Registry Composition and Feature Gating"
+summary: "Compose skill registries in fixed phases with explicit feature gates so merged command surfaces stay deterministic and cheap to refresh."
+when_to_use: "Use when skills or prompt commands come from multiple sources and optional features must control which sources load and in what order."
+category: command-surfaces
+maturity: recommended
+tags:
+  - command-surfaces
+  - agent-runtime
+  - registry-bootstrap
+bundles:
+  - command-surfaces
+  - registry-bootstrap
+targets:
+  - universal
+  - codex-compatible
+  - claude-code-compatible
+paths:
+  universal: skills/skill-registry-composition-and-feature-gating/SKILL.md
+  codex: agents/codex/skills/skill-registry-composition-and-feature-gating/SKILL.md
+  claude_code: agents/claude-code/skills/skill-registry-composition-and-feature-gating/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

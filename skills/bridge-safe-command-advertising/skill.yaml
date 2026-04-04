@@ -9,6 +9,7 @@ tags:
   - agent-runtime
 bundles:
   - remote-bridge
+  - bridge-privacy
 targets:
   - universal
   - codex-compatible

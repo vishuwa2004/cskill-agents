@@ -11,6 +11,7 @@ tags:
 bundles:
   - command-surfaces
   - extensions-mcp
+  - skill-discovery
 targets:
   - universal
   - codex-compatible

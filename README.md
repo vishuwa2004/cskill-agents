@@ -62,9 +62,9 @@ Install a curated bundle with the helper script:
 
 ## Included Skills
 
-- 104 curated skills
+- 108 curated skills
 - 36 starter skills
-- 9 curated bundles
+- 19 curated bundles
 
 Start with:
 - [Starter bundle](catalog/INDEX.md#starter-bundle)
@@ -89,6 +89,16 @@ Compatibility here means the repo uses a skill-folder layout that these agents c
 - `safety-worktrees`: shell safety, path guards, and worktree handling
 - `remote-bridge`: remote-safe command and bridge transport patterns
 - `terminal-ui`: terminal presentation and feedback patterns
+- `registry-bootstrap`: root resolution, registry composition, feature-gated loading, and cache-safe startup assembly
+- `skill-discovery`: high-signal admission, filtering, listing, and first-turn discovery rules
+- `output-budgeting`: tool result persistence, previews, truncation, and budget-aware output shaping
+- `compaction-core`: retry, grouping, cache-edit, and compaction-control mechanics
+- `memory-signals`: memory prefetch, recall selection, attachment timing, and session-memory shaping
+- `extension-sync`: marketplace reconciliation, lifecycle parity, and runtime refresh consistency
+- `bridge-privacy`: remote-safe bridge payloads, capability advertising, and normalized transport recovery
+- `agent-lifecycle`: child-agent context handoff, scoped MCP setup, cleanup, and completion reporting
+- `fork-integrity`: cache-stable forks, isolated skill runs, transcript hygiene, and resume consistency
+- `workspace-safety`: shell validation, sensitive-path guards, and worktree-safe repo operations
 
 ## Repo Layout
 

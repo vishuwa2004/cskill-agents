@@ -1,27 +1,27 @@
 ---
 name: pose-fragment-unicode-sprite-design
-description: "Compose Unicode sprite poses by swapping localized fragments so expressions and gestures share one stable silhouette and spacing."
+description: "Compose Unicode pose variants by swapping localized fragments so each expression shares the same base silhouette and spacing."
 metadata:
   author: ychampion
 ---
 
 # SKILL: Pose-Fragment Unicode Sprite Design
 **Domain:** terminal-ui
-**Trigger:** Use when a terminal sprite needs multiple expressions or gestures while staying anchored to the same silhouette.
-**Source Pattern:** Distilled from reviewed fragment-swapped terminal sprite systems.
+**Trigger:** Use when terminal sprite art must support multiple expressions or gestures while staying anchored to the same silhouette and spacing.
+**Source Pattern:** Distilled from reviewed fragment-based Unicode sprite and expression-system implementations.
 
 ## Core Method
-Define the sprite as a stable body plus a pose dictionary for the small fragments that change between expressions. Each pose reuses the same base spacing and shell while swapping only localized pieces such as eyes, hands, or held objects. This keeps rendering cheap, makes new poses easy to add, and prevents subtle alignment drift.
+Define the sprite as stable base segments plus a dictionary of overlay fragments keyed by pose. Each pose reuses the same shell and swaps only localized fragments like eyes, hands, or props, so the character can wink, look around, or gesture without altering the immutable silhouette. This makes new expressions cheap to add while preserving alignment with nearby UI.
 
 ## Key Rules
-- Keep the immutable shell in one shared structure and isolate all pose-specific fragments in a separate mapping.
-- Swap only localized fragments so new poses never require re-deriving the full sprite layout.
-- Design fallback fragments for terminals that cannot render the fanciest glyphs without changing spacing.
+- Keep the stable base segments constant across poses and store them separately from movable fragments.
+- Store movable fragments in a pose dictionary so new expressions only replace localized strings.
+- Preserve spacing around each fragment so pose changes never alter total width or anchor points.
+- Provide a default fragment set that remains valid even when a host cannot render the fancier variants.
 
 ## Example Application
-For a coding assistant banner with neutral, alert, and celebration poses, keep one base sprite and store only the changing face and arm fragments per pose.
+If a coding assistant banner needs idle, warning, and celebration expressions, store one base body plus separate fragment sets for eyes and arms. The UI can switch expressions instantly without recalculating the whole sprite or disturbing layout.
 
 ## Anti-Patterns (What NOT to do)
-- Do not author every pose as a fully separate ASCII block.
-- Do not tie pose changes to width or padding changes.
-- Do not rely on terminal-specific glyphs without a same-width fallback.
+- Do not generate each pose as a completely separate ASCII block; that invites drift and misalignment.
+- Do not tie fragment changes to width or padding changes, or the sprite will stop lining up with surrounding UI.

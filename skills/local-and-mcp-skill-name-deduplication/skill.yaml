@@ -9,6 +9,7 @@ tags:
   - agent-runtime
 bundles:
   - command-surfaces
+  - skill-discovery
 targets:
   - universal
   - codex-compatible

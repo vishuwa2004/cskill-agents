@@ -1,0 +1,8 @@
+agents/codex/skills/cache-prefix-stability-for-subagents
+agents/codex/skills/cache-identical-fork-prefix-construction
+agents/codex/skills/fork-child-directive-guardrails
+agents/codex/skills/forked-skill-execution-with-isolated-context
+agents/codex/skills/forked-auto-memory-extraction
+agents/codex/skills/orphaned-tool-call-sanitizer
+agents/codex/skills/namespace-resolved-skill-preloading
+agents/codex/skills/per-agent-skill-listing-dedupe
