@@ -1,0 +1,27 @@
+slug: cache-safe-stop-hook-snapshotting
+name: Cache-Safe Stop-Hook Snapshotting
+summary: Persist a cache-safe stop-hook context snapshot only for main session queries
+  so later helpers can resume from stable state without fork pollution.
+when_to_use: Apply when end-of-turn hooks need to persist enough state for follow-up
+  helpers, but background forks must not overwrite the main session snapshot.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/cache-safe-stop-hook-snapshotting/SKILL.md
+  codex: agents/codex/skills/cache-safe-stop-hook-snapshotting/SKILL.md
+  claude_code: agents/claude-code/skills/cache-safe-stop-hook-snapshotting/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

@@ -1,0 +1,29 @@
+slug: main-agent-vs-background-memory-extraction-exclusion
+name: Main Agent Vs Background Memory Extraction Exclusion
+summary: Skip the background memory extractor when the main agent already persisted
+  memory during the same turn to avoid duplicates and race hazards.
+when_to_use: Apply whenever the background memory agent must determine whether the
+  parent already saved the same memories so it can safely skip processing.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+- multi-agent
+- agent-lifecycle
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/main-agent-vs-background-memory-extraction-exclusion/SKILL.md
+  codex: agents/codex/skills/main-agent-vs-background-memory-extraction-exclusion/SKILL.md
+  claude_code: agents/claude-code/skills/main-agent-vs-background-memory-extraction-exclusion/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

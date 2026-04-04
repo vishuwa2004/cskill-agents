@@ -1,0 +1,27 @@
+slug: cache-sweep-activation-fallback
+name: Cache Sweep Activation Fallback
+summary: Sweep stale extension caches before activation, then fall back to a sticky
+  manual-refresh flag if the live refresh fails.
+when_to_use: Apply when newly materialized extension sources must be activated immediately,
+  but the live refresh can fail and needs a recoverable fallback.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/cache-sweep-activation-fallback/SKILL.md
+  codex: agents/codex/skills/cache-sweep-activation-fallback/SKILL.md
+  claude_code: agents/claude-code/skills/cache-sweep-activation-fallback/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

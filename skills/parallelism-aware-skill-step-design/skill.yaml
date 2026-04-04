@@ -1,0 +1,27 @@
+slug: parallelism-aware-skill-step-design
+name: Parallelism-Aware Skill Step Design
+summary: Design skill steps with explicit execution topology, asking which parts run
+  directly, in subagents, in teammate swarms, or in parallel.
+when_to_use: Use when converting a workflow into a skill and some steps may run in
+  parallel, through task agents, through teammate swarms, or require human checkpoints.
+category: multi-agent
+maturity: recommended
+tags:
+- multi-agent
+- agent-coordination
+- agent-runtime
+bundles:
+- multi-agent
+- agent-lifecycle
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/parallelism-aware-skill-step-design/SKILL.md
+  codex: agents/codex/skills/parallelism-aware-skill-step-design/SKILL.md
+  claude_code: agents/claude-code/skills/parallelism-aware-skill-step-design/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

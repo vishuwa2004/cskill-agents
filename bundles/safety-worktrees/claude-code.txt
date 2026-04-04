@@ -9,3 +9,8 @@ agents/claude-code/skills/cross-shell-command-safety-maps
 agents/claude-code/skills/remote-safe-command-allowlist
 agents/claude-code/skills/auto-memory-tool-permission-fencing
 agents/claude-code/skills/plan-mode-permission-gating
+agents/claude-code/skills/dead-path-update-skipping
+agents/claude-code/skills/empty-repo-bundle-preflight
+agents/claude-code/skills/reachable-wip-via-temporary-refs
+agents/claude-code/skills/skill-scoped-permission-suggestions
+agents/claude-code/skills/staged-bundle-fallback-chain

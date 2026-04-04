@@ -16,3 +16,10 @@ agents/codex/skills/append-only-sidechain-transcripts
 agents/codex/skills/subagent-metrics-bridging
 agents/codex/skills/trusted-frontmatter-gating
 agents/codex/skills/orphaned-tool-call-sanitizer
+agents/codex/skills/fork-gap-fill-reconstruction
+agents/codex/skills/inherited-flags-for-spawned-teammates
+agents/codex/skills/main-agent-vs-background-memory-extraction-exclusion
+agents/codex/skills/main-thread-empty-string-agent-key-normalization
+agents/codex/skills/parallelism-aware-skill-step-design
+agents/codex/skills/role-aware-context-slimming
+agents/codex/skills/session-memory-mailbox-exclusion

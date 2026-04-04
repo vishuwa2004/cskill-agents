@@ -1,0 +1,27 @@
+slug: nonblocking-plugin-install-status-projection
+name: Nonblocking Plugin Install Status Projection
+summary: Map async marketplace reconciliation events into AppState rows so UIs show
+  install/installing/failed badges without blocking.
+when_to_use: Use when marketplace reconciliation emits progress events but the main
+  UI must remain responsive with up-to-date status rows.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/nonblocking-plugin-install-status-projection/SKILL.md
+  codex: agents/codex/skills/nonblocking-plugin-install-status-projection/SKILL.md
+  claude_code: agents/claude-code/skills/nonblocking-plugin-install-status-projection/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

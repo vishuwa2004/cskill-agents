@@ -1,0 +1,27 @@
+slug: reachable-wip-via-temporary-refs
+name: Reachable WIP Via Temporary Refs
+summary: Capture in-flight WIP via `git stash create`, make it reachable through temporary
+  refs, and tear down the refs after bundling finishes.
+when_to_use: Apply when bundling or seeding a repository and you want to include uncommitted
+  work without disturbing the working tree or leaving dangling refs.
+category: safety-worktrees
+maturity: recommended
+tags:
+- safety-worktrees
+- repo-safety
+- agent-runtime
+bundles:
+- safety-worktrees
+- workspace-safety
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/reachable-wip-via-temporary-refs/SKILL.md
+  codex: agents/codex/skills/reachable-wip-via-temporary-refs/SKILL.md
+  claude_code: agents/claude-code/skills/reachable-wip-via-temporary-refs/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: safety-worktrees
+  review_status: curated

@@ -16,3 +16,10 @@ agents/claude-code/skills/append-only-sidechain-transcripts
 agents/claude-code/skills/subagent-metrics-bridging
 agents/claude-code/skills/trusted-frontmatter-gating
 agents/claude-code/skills/orphaned-tool-call-sanitizer
+agents/claude-code/skills/fork-gap-fill-reconstruction
+agents/claude-code/skills/inherited-flags-for-spawned-teammates
+agents/claude-code/skills/main-agent-vs-background-memory-extraction-exclusion
+agents/claude-code/skills/main-thread-empty-string-agent-key-normalization
+agents/claude-code/skills/parallelism-aware-skill-step-design
+agents/claude-code/skills/role-aware-context-slimming
+agents/claude-code/skills/session-memory-mailbox-exclusion

@@ -1,0 +1,27 @@
+slug: memory-entrypoint-with-index-discipline
+name: Memory Entrypoint With Index Discipline
+summary: Keep MEMORY.md terse by capping entries, warning when caps hit, and pointing
+  each memory to its own file.
+when_to_use: "Use whenever you\u2019re writing to MEMORY.md so the index stays readable\
+  \ and never exceeds terminal-safe length budgets."
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/memory-entrypoint-with-index-discipline/SKILL.md
+  codex: agents/codex/skills/memory-entrypoint-with-index-discipline/SKILL.md
+  claude_code: agents/claude-code/skills/memory-entrypoint-with-index-discipline/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

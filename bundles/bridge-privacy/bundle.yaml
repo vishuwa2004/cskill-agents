@@ -1,12 +1,14 @@
 id: bridge-privacy
-name: "Bridge Privacy"
-description: "Remote-safe bridge payloads, capability advertising, and normalized transport recovery."
+name: Bridge Privacy
+description: Remote-safe bridge payloads, capability advertising, and normalized transport
+  recovery.
 skills:
-  - bridge-origin-safe-slash-override
-  - type-tiered-bridge-command-gating
-  - bridge-safe-command-advertising
-  - user-invocable-capability-serialization
-  - shared-system-init-shape-parity
-  - privacy-redacted-repl-bridge-system-init
-  - nonblocking-post-connect-capability-broadcast
-  - transport-error-normalization-and-retry-policy
+- bridge-origin-safe-slash-override
+- type-tiered-bridge-command-gating
+- bridge-safe-command-advertising
+- user-invocable-capability-serialization
+- shared-system-init-shape-parity
+- privacy-redacted-repl-bridge-system-init
+- nonblocking-post-connect-capability-broadcast
+- transport-error-normalization-and-retry-policy
+- null-hardened-feature-overrides

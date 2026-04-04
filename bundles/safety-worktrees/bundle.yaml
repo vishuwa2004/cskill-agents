@@ -1,15 +1,20 @@
 id: safety-worktrees
-name: "Safety And Worktrees"
-description: "Permission fences, shell safety, path guards, and worktree reuse patterns."
+name: Safety And Worktrees
+description: Permission fences, shell safety, path guards, and worktree reuse patterns.
 skills:
-  - canonical-worktree-path-normalization
-  - canonical-root-marketplace-path-normalization
-  - fast-worktree-reuse-with-head-pointer-checks
-  - safe-worktree-slug-validation
-  - case-normalized-sensitive-path-guards
-  - dangerous-config-file-protection
-  - declarative-read-only-command-allowlists
-  - cross-shell-command-safety-maps
-  - remote-safe-command-allowlist
-  - auto-memory-tool-permission-fencing
-  - plan-mode-permission-gating
+- canonical-worktree-path-normalization
+- canonical-root-marketplace-path-normalization
+- fast-worktree-reuse-with-head-pointer-checks
+- safe-worktree-slug-validation
+- case-normalized-sensitive-path-guards
+- dangerous-config-file-protection
+- declarative-read-only-command-allowlists
+- cross-shell-command-safety-maps
+- remote-safe-command-allowlist
+- auto-memory-tool-permission-fencing
+- plan-mode-permission-gating
+- dead-path-update-skipping
+- empty-repo-bundle-preflight
+- reachable-wip-via-temporary-refs
+- skill-scoped-permission-suggestions
+- staged-bundle-fallback-chain

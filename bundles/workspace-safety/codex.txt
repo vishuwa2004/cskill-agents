@@ -6,3 +6,8 @@ agents/codex/skills/case-normalized-sensitive-path-guards
 agents/codex/skills/canonical-worktree-path-normalization
 agents/codex/skills/safe-worktree-slug-validation
 agents/codex/skills/fast-worktree-reuse-with-head-pointer-checks
+agents/codex/skills/dead-path-update-skipping
+agents/codex/skills/empty-repo-bundle-preflight
+agents/codex/skills/reachable-wip-via-temporary-refs
+agents/codex/skills/skill-scoped-permission-suggestions
+agents/codex/skills/staged-bundle-fallback-chain

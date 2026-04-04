@@ -1,0 +1,28 @@
+slug: empty-payload-sentinel-guard
+name: Empty Payload Sentinel Guard
+summary: Guard requests from closing instantly when a tool returns nothing by injecting
+  the sentinel message and logging the event.
+when_to_use: 'Apply this when a tool_result block might legitimately be empty (shell
+  commands with no stdout, MCP commands returning `content: []`, statements that finish
+  silently) so the assistant still sees something to react to.'
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/empty-payload-sentinel-guard/SKILL.md
+  codex: agents/codex/skills/empty-payload-sentinel-guard/SKILL.md
+  claude_code: agents/claude-code/skills/empty-payload-sentinel-guard/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

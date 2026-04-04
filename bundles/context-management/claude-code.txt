@@ -18,3 +18,14 @@ agents/claude-code/skills/relevant-memory-selection-by-header
 agents/claude-code/skills/tool-success-aware-memory-suppression
 agents/claude-code/skills/forked-auto-memory-extraction
 agents/claude-code/skills/user-input-before-thread-attachments
+agents/claude-code/skills/cache-safe-stop-hook-snapshotting
+agents/claude-code/skills/compact-boundary-session-distillation
+agents/claude-code/skills/empty-trigger-short-circuit-before-app-state
+agents/claude-code/skills/main-agent-vs-background-memory-extraction-exclusion
+agents/claude-code/skills/main-thread-only-cache-editing
+agents/claude-code/skills/mark-after-filter-memory-deduplication
+agents/claude-code/skills/memory-directory-exists-guidance
+agents/claude-code/skills/memory-entrypoint-with-index-discipline
+agents/claude-code/skills/nested-memory-trigger-consume-and-clear
+agents/claude-code/skills/role-aware-context-slimming
+agents/claude-code/skills/time-based-microcompact-trigger

@@ -1,0 +1,29 @@
+slug: role-aware-context-slimming
+name: Role-Aware Context Slimming
+summary: "Trim user and system context based on the agent\u2019s role so read-only\
+  \ helpers don\u2019t inherit stale git or CLAUDE metadata."
+when_to_use: When an agent declares `omitClaudeMd` or runs as an Explore/Plan helper,
+  slim the context before handing it to `runAgent`.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+- multi-agent
+- agent-lifecycle
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/role-aware-context-slimming/SKILL.md
+  codex: agents/codex/skills/role-aware-context-slimming/SKILL.md
+  claude_code: agents/claude-code/skills/role-aware-context-slimming/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

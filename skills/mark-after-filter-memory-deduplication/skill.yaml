@@ -1,0 +1,28 @@
+slug: mark-after-filter-memory-deduplication
+name: Mark-After-Filter Memory Deduplication
+summary: Filter prefetched memory attachments against cumulative read state before
+  mutating that state, so async surfacing does not dedupe itself away.
+when_to_use: Apply when asynchronously prefetched memories or file attachments must
+  be deduplicated against a cumulative read-state cache that they will also update
+  after surviving the filter.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/mark-after-filter-memory-deduplication/SKILL.md
+  codex: agents/codex/skills/mark-after-filter-memory-deduplication/SKILL.md
+  claude_code: agents/claude-code/skills/mark-after-filter-memory-deduplication/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

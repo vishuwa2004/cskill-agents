@@ -1,0 +1,27 @@
+slug: skill-scoped-permission-suggestions
+name: Skill-Scoped Permission Suggestions
+summary: Suggest the narrowest permission scope by mapping a file path to its enclosing
+  skill directory before prompting the user.
+when_to_use: Apply this when Claude is asking for filesystem permission that can be
+  narrowed to a single skill directory.
+category: safety-worktrees
+maturity: recommended
+tags:
+- safety-worktrees
+- repo-safety
+- agent-runtime
+bundles:
+- safety-worktrees
+- workspace-safety
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/skill-scoped-permission-suggestions/SKILL.md
+  codex: agents/codex/skills/skill-scoped-permission-suggestions/SKILL.md
+  claude_code: agents/claude-code/skills/skill-scoped-permission-suggestions/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: safety-worktrees
+  review_status: curated

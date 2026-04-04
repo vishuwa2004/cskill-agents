@@ -9,3 +9,4 @@ agents/codex/skills/progressive-width-gated-status-rows
 agents/codex/skills/reduced-motion-first-terminal-animation
 agents/codex/skills/viewport-aware-animation-pausing
 agents/codex/skills/scrollback-freeze-optimization
+agents/codex/skills/terminal-specific-art-fallbacks

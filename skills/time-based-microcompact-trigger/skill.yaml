@@ -1,0 +1,27 @@
+slug: time-based-microcompact-trigger
+name: Time-Based Microcompact Trigger
+summary: Fall back to time-based microcompaction when the idle gap exceeds the configured
+  threshold and directly clear the oldest compactable tool results.
+when_to_use: Apply when the interval since the last assistant response exceeds the
+  threshold and cached microcompact cannot run.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- compaction-core
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/time-based-microcompact-trigger/SKILL.md
+  codex: agents/codex/skills/time-based-microcompact-trigger/SKILL.md
+  claude_code: agents/claude-code/skills/time-based-microcompact-trigger/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

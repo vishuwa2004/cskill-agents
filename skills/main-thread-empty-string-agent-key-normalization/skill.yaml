@@ -1,0 +1,27 @@
+slug: main-thread-empty-string-agent-key-normalization
+name: Main-Thread Empty-String Agent Key Normalization
+summary: Normalize the main thread to a concrete empty-string key so agent-scoped
+  state maps treat main and forked threads uniformly.
+when_to_use: Apply when thread-scoped state is keyed by agent identity, but the main
+  thread has no explicit agent ID and still needs stable map behavior.
+category: multi-agent
+maturity: recommended
+tags:
+- multi-agent
+- agent-coordination
+- agent-runtime
+bundles:
+- multi-agent
+- fork-integrity
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/main-thread-empty-string-agent-key-normalization/SKILL.md
+  codex: agents/codex/skills/main-thread-empty-string-agent-key-normalization/SKILL.md
+  claude_code: agents/claude-code/skills/main-thread-empty-string-agent-key-normalization/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

@@ -1,0 +1,27 @@
+slug: create-only-idempotent-artifact-write
+name: Create-Only Idempotent Artifact Write
+summary: Persist deterministic artifacts with a create-only write and treat existing
+  files as replay success instead of an error.
+when_to_use: Apply when a deterministic artifact is keyed by a stable invocation ID
+  and may be replayed across retries, compaction, or resume passes.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/create-only-idempotent-artifact-write/SKILL.md
+  codex: agents/codex/skills/create-only-idempotent-artifact-write/SKILL.md
+  claude_code: agents/claude-code/skills/create-only-idempotent-artifact-write/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

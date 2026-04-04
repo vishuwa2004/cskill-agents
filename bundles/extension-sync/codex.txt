@@ -8,3 +8,13 @@ agents/codex/skills/progress-event-state-bridge
 agents/codex/skills/seed-before-diff-marketplace-registration
 agents/codex/skills/steady-state-sidecar-sync
 agents/codex/skills/three-layer-extension-sync
+agents/codex/skills/aggregated-change-signal-return
+agents/codex/skills/cache-sweep-activation-fallback
+agents/codex/skills/cache-warm-before-cache-only-fanout
+agents/codex/skills/dead-path-update-skipping
+agents/codex/skills/deferred-refresh-flag-contract
+agents/codex/skills/diff-first-progress-projection
+agents/codex/skills/fallback-source-presence-sufficiency
+agents/codex/skills/materialization-aware-refresh-escalation
+agents/codex/skills/mode-gated-reconcile-skip-filter
+agents/codex/skills/nonblocking-plugin-install-status-projection

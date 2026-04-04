@@ -1,0 +1,27 @@
+slug: staged-bundle-fallback-chain
+name: Staged Bundle Fallback Chain
+summary: Retry Git bundle creation across decreasing scopes (all, HEAD, squashed)
+  to stay under upload size limits while keeping relevant history.
+when_to_use: Apply when you are creating a Git bundle for upload and you need a staged
+  fallback chain from full history to a minimal seed that still fits the byte ceiling.
+category: safety-worktrees
+maturity: recommended
+tags:
+- safety-worktrees
+- repo-safety
+- agent-runtime
+bundles:
+- safety-worktrees
+- workspace-safety
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/staged-bundle-fallback-chain/SKILL.md
+  codex: agents/codex/skills/staged-bundle-fallback-chain/SKILL.md
+  claude_code: agents/claude-code/skills/staged-bundle-fallback-chain/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: safety-worktrees
+  review_status: curated

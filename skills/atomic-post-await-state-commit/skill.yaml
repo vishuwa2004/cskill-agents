@@ -1,0 +1,28 @@
+slug: atomic-post-await-state-commit
+name: Atomic Post-Await State Commit
+summary: After awaiting persistence work, update the shared budget state for each
+  `tool_use_id` exactly once so no concurrent reader ever sees a half-committed decision.
+when_to_use: Use this pattern when concurrently persisting large tool results and
+  mutating `ContentReplacementState` once the awaited work completes, such as the
+  `freshReplacements` loop inside `enforceToolResultBudget`.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/atomic-post-await-state-commit/SKILL.md
+  codex: agents/codex/skills/atomic-post-await-state-commit/SKILL.md
+  claude_code: agents/claude-code/skills/atomic-post-await-state-commit/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

@@ -1,0 +1,28 @@
+slug: deferred-refresh-flag-contract
+name: Deferred Refresh Flag Contract
+summary: Decide when to auto-refresh plugins after marketplaces change and when to
+  defer to a manual `/reload-plugins` via the `needsRefresh` flag.
+when_to_use: '`performBackgroundPluginInstallations` completes `reconcileMarketplaces`
+  and must decide whether to auto-refresh plugins or set `plugins.needsRefresh` via
+  AppState.'
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/deferred-refresh-flag-contract/SKILL.md
+  codex: agents/codex/skills/deferred-refresh-flag-contract/SKILL.md
+  claude_code: agents/claude-code/skills/deferred-refresh-flag-contract/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

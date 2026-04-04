@@ -6,3 +6,4 @@ agents/claude-code/skills/shared-system-init-shape-parity
 agents/claude-code/skills/privacy-redacted-repl-bridge-system-init
 agents/claude-code/skills/nonblocking-post-connect-capability-broadcast
 agents/claude-code/skills/transport-error-normalization-and-retry-policy
+agents/claude-code/skills/null-hardened-feature-overrides

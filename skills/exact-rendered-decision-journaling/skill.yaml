@@ -1,0 +1,27 @@
+slug: exact-rendered-decision-journaling
+name: Exact Rendered Decision Journaling
+summary: Journal each per-message tool result replacement so resume logic replays
+  the exact preview the model saw.
+when_to_use: Apply whenever per-message budgeting rewrites tool_result content so
+  transcripts capture the preview string and resume logic can reapply the same decisions.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/exact-rendered-decision-journaling/SKILL.md
+  codex: agents/codex/skills/exact-rendered-decision-journaling/SKILL.md
+  claude_code: agents/claude-code/skills/exact-rendered-decision-journaling/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

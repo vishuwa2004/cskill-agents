@@ -7,3 +7,5 @@ agents/codex/skills/progressive-compaction-prompt
 agents/codex/skills/compactable-tool-whitelist-gating
 agents/codex/skills/time-gap-cache-expiry-microcompact
 agents/codex/skills/token-budgeted-compaction-with-reinjection
+agents/codex/skills/main-thread-only-cache-editing
+agents/codex/skills/time-based-microcompact-trigger

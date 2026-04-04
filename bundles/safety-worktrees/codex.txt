@@ -9,3 +9,8 @@ agents/codex/skills/cross-shell-command-safety-maps
 agents/codex/skills/remote-safe-command-allowlist
 agents/codex/skills/auto-memory-tool-permission-fencing
 agents/codex/skills/plan-mode-permission-gating
+agents/codex/skills/dead-path-update-skipping
+agents/codex/skills/empty-repo-bundle-preflight
+agents/codex/skills/reachable-wip-via-temporary-refs
+agents/codex/skills/skill-scoped-permission-suggestions
+agents/codex/skills/staged-bundle-fallback-chain

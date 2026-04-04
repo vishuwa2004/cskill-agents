@@ -1,13 +1,16 @@
 id: compaction-core
-name: "Compaction Core"
-description: "Core retry, grouping, cache-edit, and compaction-control patterns for long conversations."
+name: Compaction Core
+description: Core retry, grouping, cache-edit, and compaction-control patterns for
+  long conversations.
 skills:
-  - api-round-message-grouping
-  - api-round-ptl-retry-truncation
-  - autocompact-circuit-breaker
-  - autocompact-recursion-guards
-  - cache-edit-pin-and-replay
-  - progressive-compaction-prompt
-  - compactable-tool-whitelist-gating
-  - time-gap-cache-expiry-microcompact
-  - token-budgeted-compaction-with-reinjection
+- api-round-message-grouping
+- api-round-ptl-retry-truncation
+- autocompact-circuit-breaker
+- autocompact-recursion-guards
+- cache-edit-pin-and-replay
+- progressive-compaction-prompt
+- compactable-tool-whitelist-gating
+- time-gap-cache-expiry-microcompact
+- token-budgeted-compaction-with-reinjection
+- main-thread-only-cache-editing
+- time-based-microcompact-trigger

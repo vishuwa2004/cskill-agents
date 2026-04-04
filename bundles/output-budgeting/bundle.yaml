@@ -1,10 +1,20 @@
 id: output-budgeting
-name: "Output Budgeting"
-description: "Tool result persistence, previews, truncation, and budget-aware output shaping."
+name: Output Budgeting
+description: Tool result persistence, previews, truncation, and budget-aware output
+  shaping.
 skills:
-  - idempotent-tool-result-persistence
-  - preview-first-large-output-messages
-  - modality-preserving-binary-offload
-  - tail-preserving-task-output-truncation
-  - wire-shape-aligned-budgeting
-  - decision-fate-freezing
+- idempotent-tool-result-persistence
+- preview-first-large-output-messages
+- modality-preserving-binary-offload
+- tail-preserving-task-output-truncation
+- wire-shape-aligned-budgeting
+- decision-fate-freezing
+- atomic-post-await-state-commit
+- budget-diminishing-continue
+- create-only-idempotent-artifact-write
+- empty-payload-sentinel-guard
+- exact-rendered-decision-journaling
+- prevent-continuation-stop-hook-contract
+- prevent-continuation-stop-hook-messaging
+- telemetry-sanitized-skill-invocation
+- withheld-max-output-token-errors

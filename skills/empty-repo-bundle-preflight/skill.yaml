@@ -1,0 +1,27 @@
+slug: empty-repo-bundle-preflight
+name: Empty Repo Bundle Preflight
+summary: Fail fast when the repository has no refs so downstream bundling never triggers
+  empty Git bundles.
+when_to_use: Apply before running `git bundle create` to ensure the repository actually
+  has refs, avoiding the 128 exit code and providing a clearer error path.
+category: safety-worktrees
+maturity: recommended
+tags:
+- safety-worktrees
+- repo-safety
+- agent-runtime
+bundles:
+- safety-worktrees
+- workspace-safety
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/empty-repo-bundle-preflight/SKILL.md
+  codex: agents/codex/skills/empty-repo-bundle-preflight/SKILL.md
+  claude_code: agents/claude-code/skills/empty-repo-bundle-preflight/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: safety-worktrees
+  review_status: curated

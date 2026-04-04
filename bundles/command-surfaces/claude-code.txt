@@ -14,3 +14,12 @@ agents/claude-code/skills/slash-command-skill-classification-filter
 agents/claude-code/skills/budget-aware-skill-listing-formatting
 agents/claude-code/skills/local-and-mcp-skill-name-deduplication
 agents/claude-code/skills/per-agent-skill-listing-dedupe
+agents/claude-code/skills/bundled-skill-file-extraction
+agents/claude-code/skills/classified-skill-listing-debug-telemetry
+agents/claude-code/skills/no-op-empty-skill-delta-return
+agents/claude-code/skills/resume-skill-listing-suppression
+agents/claude-code/skills/skill-listing-reset-on-real-skill-changes
+agents/claude-code/skills/skip-skill-discovery-on-skill-expansion
+agents/claude-code/skills/skip-skill-listing-in-test-environment
+agents/claude-code/skills/skip-skill-listing-without-skill-tool
+agents/claude-code/skills/turn-scoped-skill-discovery-reset

@@ -1,0 +1,27 @@
+slug: nested-memory-trigger-consume-and-clear
+name: Nested Memory Trigger Consume and Clear
+summary: Process every nested-memory trigger before wiping the trigger set so subsequent
+  iterations only see new paths.
+when_to_use: Apply when a worker must fetch nested memory attachments whose trigger
+  list can be cleared only after all paths are handled.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/nested-memory-trigger-consume-and-clear/SKILL.md
+  codex: agents/codex/skills/nested-memory-trigger-consume-and-clear/SKILL.md
+  claude_code: agents/claude-code/skills/nested-memory-trigger-consume-and-clear/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

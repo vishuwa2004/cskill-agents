@@ -1,0 +1,27 @@
+slug: empty-trigger-short-circuit-before-app-state
+name: Empty Trigger Short-Circuit Before App State
+summary: Skip nested memory collection when no triggers exist so render-bound `getAppState()`
+  is never invoked unnecessarily.
+when_to_use: Use when nested memory attachment triggers may be empty and you want
+  to avoid React render-cycle work unless there is actual work to do.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/empty-trigger-short-circuit-before-app-state/SKILL.md
+  codex: agents/codex/skills/empty-trigger-short-circuit-before-app-state/SKILL.md
+  claude_code: agents/claude-code/skills/empty-trigger-short-circuit-before-app-state/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

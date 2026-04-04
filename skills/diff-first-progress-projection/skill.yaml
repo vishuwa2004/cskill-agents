@@ -1,0 +1,27 @@
+slug: diff-first-progress-projection
+name: Diff-First Progress Projection
+summary: Project marketplace installation progress by diffing declared sources before
+  kickoff so the UI shows pending spinners without waiting on the clone.
+when_to_use: Background marketplace reconciliation needs to show progress before the
+  clone/install work begins (before `reconcileMarketplaces`).
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/diff-first-progress-projection/SKILL.md
+  codex: agents/codex/skills/diff-first-progress-projection/SKILL.md
+  claude_code: agents/claude-code/skills/diff-first-progress-projection/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

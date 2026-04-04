@@ -1,0 +1,27 @@
+slug: mode-gated-reconcile-skip-filter
+name: Mode-Gated Reconcile Skip Filter
+summary: Inject mode-specific skip rules into a shared reconciler so unsupported source
+  types are recorded and skipped without forking the core install logic.
+when_to_use: Apply when a shared reconcile engine runs in multiple runtime modes,
+  but some modes cannot support every source type or transport.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/mode-gated-reconcile-skip-filter/SKILL.md
+  codex: agents/codex/skills/mode-gated-reconcile-skip-filter/SKILL.md
+  claude_code: agents/claude-code/skills/mode-gated-reconcile-skip-filter/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

@@ -1,0 +1,27 @@
+slug: resume-skill-listing-suppression
+name: Resume Skill Listing Suppression
+summary: Mark the current skill listing as already sent when resuming so the transcript
+  does not receive a redundant payload.
+when_to_use: Apply when a resume flow already contains a previous `skill_listing`
+  attachment and injecting another would waste ~600 tokens.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/resume-skill-listing-suppression/SKILL.md
+  codex: agents/codex/skills/resume-skill-listing-suppression/SKILL.md
+  claude_code: agents/claude-code/skills/resume-skill-listing-suppression/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

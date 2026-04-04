@@ -1,11 +1,21 @@
 id: memory-signals
-name: "Memory Signals"
-description: "Memory prefetch, recall selection, attachment timing, and session-memory shaping."
+name: Memory Signals
+description: Memory prefetch, recall selection, attachment timing, and session-memory
+  shaping.
 skills:
-  - turn-scoped-memory-prefetch-with-disposal
-  - session-memory-first-compaction
-  - relevant-memory-selection-by-header
-  - tool-success-aware-memory-suppression
-  - reinjected-attachment-pruning-before-summary
-  - user-input-before-thread-attachments
-  - conversation-engine-persistent-session-state
+- turn-scoped-memory-prefetch-with-disposal
+- session-memory-first-compaction
+- relevant-memory-selection-by-header
+- tool-success-aware-memory-suppression
+- reinjected-attachment-pruning-before-summary
+- user-input-before-thread-attachments
+- conversation-engine-persistent-session-state
+- cache-safe-stop-hook-snapshotting
+- compact-boundary-session-distillation
+- empty-trigger-short-circuit-before-app-state
+- main-agent-vs-background-memory-extraction-exclusion
+- mark-after-filter-memory-deduplication
+- memory-directory-exists-guidance
+- memory-entrypoint-with-index-discipline
+- nested-memory-trigger-consume-and-clear
+- role-aware-context-slimming

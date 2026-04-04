@@ -9,3 +9,4 @@ agents/claude-code/skills/progressive-width-gated-status-rows
 agents/claude-code/skills/reduced-motion-first-terminal-animation
 agents/claude-code/skills/viewport-aware-animation-pausing
 agents/claude-code/skills/scrollback-freeze-optimization
+agents/claude-code/skills/terminal-specific-art-fallbacks

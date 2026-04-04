@@ -1,0 +1,29 @@
+slug: skip-skill-discovery-on-skill-expansion
+name: Skip Skill Discovery on Skill Expansion
+summary: Bypass skill discovery when expanded SKILL.md or generated prompt content
+  is being reprocessed for attachments, so non-user text does not trigger recursive
+  discovery work.
+when_to_use: Apply when generated or expanded skill text must pass through the attachment
+  pipeline for parsing, but it is not fresh user intent and must not trigger discovery
+  queries.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/skip-skill-discovery-on-skill-expansion/SKILL.md
+  codex: agents/codex/skills/skip-skill-discovery-on-skill-expansion/SKILL.md
+  claude_code: agents/claude-code/skills/skip-skill-discovery-on-skill-expansion/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

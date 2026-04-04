@@ -1,17 +1,27 @@
 id: tool-orchestration
-name: "Tool Orchestration"
-description: "Tool batching, streaming, persistence, validation, and output-budget control."
+name: Tool Orchestration
+description: Tool batching, streaming, persistence, validation, and output-budget
+  control.
 skills:
-  - concurrency-safe-tool-batching
-  - ordered-streaming-tool-execution
-  - progress-first-tool-emission
-  - circular-safe-tool-registry-loading
-  - capability-pool-resolution
-  - required-argument-aware-flag-validation
-  - idempotent-tool-result-persistence
-  - preview-first-large-output-messages
-  - capability-aware-offload-skipping
-  - modality-preserving-binary-offload
-  - wire-shape-aligned-budgeting
-  - tail-preserving-task-output-truncation
-  - decision-fate-freezing
+- concurrency-safe-tool-batching
+- ordered-streaming-tool-execution
+- progress-first-tool-emission
+- circular-safe-tool-registry-loading
+- capability-pool-resolution
+- required-argument-aware-flag-validation
+- idempotent-tool-result-persistence
+- preview-first-large-output-messages
+- capability-aware-offload-skipping
+- modality-preserving-binary-offload
+- wire-shape-aligned-budgeting
+- tail-preserving-task-output-truncation
+- decision-fate-freezing
+- atomic-post-await-state-commit
+- budget-diminishing-continue
+- create-only-idempotent-artifact-write
+- empty-payload-sentinel-guard
+- exact-rendered-decision-journaling
+- prevent-continuation-stop-hook-contract
+- prevent-continuation-stop-hook-messaging
+- telemetry-sanitized-skill-invocation
+- withheld-max-output-token-errors

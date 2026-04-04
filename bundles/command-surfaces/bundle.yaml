@@ -1,20 +1,30 @@
 id: command-surfaces
-name: "Command Surfaces"
-description: "Skill discovery, command registries, listing gates, and capability-surface shaping."
+name: Command Surfaces
+description: Skill discovery, command registries, listing gates, and capability-surface
+  shaping.
 skills:
-  - portable-skill-loader-progressive-disclosure
-  - project-root-scoped-local-skill-loading
-  - memoized-command-source-aggregation
-  - feature-gated-command-registry-loading
-  - lazy-heavy-command-shims
-  - dynamic-skill-insertion-before-builtins
-  - layered-command-cache-invalidation
-  - descriptive-skill-surface-admission
-  - turn-zero-vs-inter-turn-skill-discovery-split
-  - initial-vs-dynamic-skill-listing-batching
-  - bundled-and-mcp-turn-zero-skill-filter
-  - mcp-skill-vs-prompt-discovery-filtering
-  - slash-command-skill-classification-filter
-  - budget-aware-skill-listing-formatting
-  - local-and-mcp-skill-name-deduplication
-  - per-agent-skill-listing-dedupe
+- portable-skill-loader-progressive-disclosure
+- project-root-scoped-local-skill-loading
+- memoized-command-source-aggregation
+- feature-gated-command-registry-loading
+- lazy-heavy-command-shims
+- dynamic-skill-insertion-before-builtins
+- layered-command-cache-invalidation
+- descriptive-skill-surface-admission
+- turn-zero-vs-inter-turn-skill-discovery-split
+- initial-vs-dynamic-skill-listing-batching
+- bundled-and-mcp-turn-zero-skill-filter
+- mcp-skill-vs-prompt-discovery-filtering
+- slash-command-skill-classification-filter
+- budget-aware-skill-listing-formatting
+- local-and-mcp-skill-name-deduplication
+- per-agent-skill-listing-dedupe
+- bundled-skill-file-extraction
+- classified-skill-listing-debug-telemetry
+- no-op-empty-skill-delta-return
+- resume-skill-listing-suppression
+- skill-listing-reset-on-real-skill-changes
+- skip-skill-discovery-on-skill-expansion
+- skip-skill-listing-in-test-environment
+- skip-skill-listing-without-skill-tool
+- turn-scoped-skill-discovery-reset

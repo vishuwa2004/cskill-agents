@@ -6,3 +6,5 @@ agents/codex/skills/forked-auto-memory-extraction
 agents/codex/skills/orphaned-tool-call-sanitizer
 agents/codex/skills/namespace-resolved-skill-preloading
 agents/codex/skills/per-agent-skill-listing-dedupe
+agents/codex/skills/fork-gap-fill-reconstruction
+agents/codex/skills/main-thread-empty-string-agent-key-normalization

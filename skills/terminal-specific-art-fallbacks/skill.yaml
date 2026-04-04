@@ -1,0 +1,26 @@
+slug: terminal-specific-art-fallbacks
+name: Terminal-specific Art Fallbacks
+summary: Layer terminal detection and fallback fragments so the same mascot identity
+  renders correctly across Apple Terminal, xterm, and other hosts.
+when_to_use: When the same brand art must render on Apple Terminal, xterm, and other
+  hosts with different Unicode/color capabilities while preserving the mascot identity.
+category: terminal-ui
+maturity: recommended
+tags:
+- terminal-ui
+- terminal-compat
+- agent-runtime
+bundles:
+- terminal-ui
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/terminal-specific-art-fallbacks/SKILL.md
+  codex: agents/codex/skills/terminal-specific-art-fallbacks/SKILL.md
+  claude_code: agents/claude-code/skills/terminal-specific-art-fallbacks/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: terminal-ui
+  review_status: curated

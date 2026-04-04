@@ -10,3 +10,13 @@ agents/claude-code/skills/delist-after-reconcile-enforcement
 agents/claude-code/skills/external-error-preserving-refresh-merge
 agents/claude-code/skills/mcp-skill-vs-prompt-discovery-filtering
 agents/claude-code/skills/plugin-only-agent-surface-gating
+agents/claude-code/skills/aggregated-change-signal-return
+agents/claude-code/skills/cache-sweep-activation-fallback
+agents/claude-code/skills/cache-warm-before-cache-only-fanout
+agents/claude-code/skills/dead-path-update-skipping
+agents/claude-code/skills/deferred-refresh-flag-contract
+agents/claude-code/skills/diff-first-progress-projection
+agents/claude-code/skills/fallback-source-presence-sufficiency
+agents/claude-code/skills/materialization-aware-refresh-escalation
+agents/claude-code/skills/mode-gated-reconcile-skip-filter
+agents/claude-code/skills/nonblocking-plugin-install-status-projection

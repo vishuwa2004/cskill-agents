@@ -1,0 +1,27 @@
+slug: fork-gap-fill-reconstruction
+name: Fork Gap-Fill Reconstruction
+summary: Reconstruct child replacement state from local records first, then fill uncovered
+  gaps from the parent's live map.
+when_to_use: Apply when a forked or resumed child workflow must inherit prior replacement
+  decisions even though its local transcript lacks full replacement records.
+category: multi-agent
+maturity: recommended
+tags:
+- multi-agent
+- agent-coordination
+- agent-runtime
+bundles:
+- multi-agent
+- fork-integrity
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/fork-gap-fill-reconstruction/SKILL.md
+  codex: agents/codex/skills/fork-gap-fill-reconstruction/SKILL.md
+  claude_code: agents/claude-code/skills/fork-gap-fill-reconstruction/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

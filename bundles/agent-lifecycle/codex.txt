@@ -6,3 +6,8 @@ agents/codex/skills/append-only-sidechain-transcripts
 agents/codex/skills/subagent-metrics-bridging
 agents/codex/skills/prompt-context-handoff-for-agent-runtime
 agents/codex/skills/trusted-frontmatter-gating
+agents/codex/skills/inherited-flags-for-spawned-teammates
+agents/codex/skills/main-agent-vs-background-memory-extraction-exclusion
+agents/codex/skills/parallelism-aware-skill-step-design
+agents/codex/skills/role-aware-context-slimming
+agents/codex/skills/session-memory-mailbox-exclusion

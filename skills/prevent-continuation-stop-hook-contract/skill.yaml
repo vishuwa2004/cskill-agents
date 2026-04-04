@@ -1,0 +1,27 @@
+slug: prevent-continuation-stop-hook-contract
+name: Prevent Continuation Stop-Hook Contract
+summary: Return a narrow stop-hook result that can halt the query loop without throwing,
+  while still surfacing blocking errors separately.
+when_to_use: Apply when post-response hooks may decide that the query loop must stop,
+  but the caller still needs a structured non-exception contract.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/prevent-continuation-stop-hook-contract/SKILL.md
+  codex: agents/codex/skills/prevent-continuation-stop-hook-contract/SKILL.md
+  claude_code: agents/claude-code/skills/prevent-continuation-stop-hook-contract/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

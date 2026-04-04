@@ -1,16 +1,26 @@
 id: extensions-mcp
-name: "Extensions And MCP"
-description: "Extension sync and parity patterns for plugin and MCP-backed systems."
+name: Extensions And MCP
+description: Extension sync and parity patterns for plugin and MCP-backed systems.
 skills:
-  - three-layer-extension-sync
-  - headless-interactive-reconcile-parity
-  - seed-before-diff-marketplace-registration
-  - canonical-root-marketplace-path-normalization
-  - background-marketplace-reconciliation
-  - progress-event-state-bridge
-  - auto-refresh-after-new-plugin-sources
-  - steady-state-sidecar-sync
-  - delist-after-reconcile-enforcement
-  - external-error-preserving-refresh-merge
-  - mcp-skill-vs-prompt-discovery-filtering
-  - plugin-only-agent-surface-gating
+- three-layer-extension-sync
+- headless-interactive-reconcile-parity
+- seed-before-diff-marketplace-registration
+- canonical-root-marketplace-path-normalization
+- background-marketplace-reconciliation
+- progress-event-state-bridge
+- auto-refresh-after-new-plugin-sources
+- steady-state-sidecar-sync
+- delist-after-reconcile-enforcement
+- external-error-preserving-refresh-merge
+- mcp-skill-vs-prompt-discovery-filtering
+- plugin-only-agent-surface-gating
+- aggregated-change-signal-return
+- cache-sweep-activation-fallback
+- cache-warm-before-cache-only-fanout
+- dead-path-update-skipping
+- deferred-refresh-flag-contract
+- diff-first-progress-projection
+- fallback-source-presence-sufficiency
+- materialization-aware-refresh-escalation
+- mode-gated-reconcile-skip-filter
+- nonblocking-plugin-install-status-projection

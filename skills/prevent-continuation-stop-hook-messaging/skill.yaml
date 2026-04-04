@@ -1,0 +1,27 @@
+slug: prevent-continuation-stop-hook-messaging
+name: Prevent Continuation Stop Hook Messaging
+summary: Collect stop-hook progress/errors, emit a structured prevented-continuation
+  attachment, and summarize the block for users and logs.
+when_to_use: Use when stop hooks prevent continuation so you can surface a consistent
+  attachment plus a summary notification that downstream UI/logging consumes.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/prevent-continuation-stop-hook-messaging/SKILL.md
+  codex: agents/codex/skills/prevent-continuation-stop-hook-messaging/SKILL.md
+  claude_code: agents/claude-code/skills/prevent-continuation-stop-hook-messaging/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

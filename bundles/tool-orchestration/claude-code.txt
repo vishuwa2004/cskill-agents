@@ -11,3 +11,12 @@ agents/claude-code/skills/modality-preserving-binary-offload
 agents/claude-code/skills/wire-shape-aligned-budgeting
 agents/claude-code/skills/tail-preserving-task-output-truncation
 agents/claude-code/skills/decision-fate-freezing
+agents/claude-code/skills/atomic-post-await-state-commit
+agents/claude-code/skills/budget-diminishing-continue
+agents/claude-code/skills/create-only-idempotent-artifact-write
+agents/claude-code/skills/empty-payload-sentinel-guard
+agents/claude-code/skills/exact-rendered-decision-journaling
+agents/claude-code/skills/prevent-continuation-stop-hook-contract
+agents/claude-code/skills/prevent-continuation-stop-hook-messaging
+agents/claude-code/skills/telemetry-sanitized-skill-invocation
+agents/claude-code/skills/withheld-max-output-token-errors

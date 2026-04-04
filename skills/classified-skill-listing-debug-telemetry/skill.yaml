@@ -1,0 +1,28 @@
+slug: classified-skill-listing-debug-telemetry
+name: Classified Skill Listing Debug Telemetry
+summary: Emit low-cost debug telemetry for skill-listing batches that records batch
+  size, initial-vs-dynamic mode, and cumulative sent count without logging the payload
+  body.
+when_to_use: Apply when a listing or announcement pipeline needs debuggable operational
+  signals, but logging the full payload would be noisy, expensive, or sensitive.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/classified-skill-listing-debug-telemetry/SKILL.md
+  codex: agents/codex/skills/classified-skill-listing-debug-telemetry/SKILL.md
+  claude_code: agents/claude-code/skills/classified-skill-listing-debug-telemetry/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

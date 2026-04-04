@@ -1,0 +1,27 @@
+slug: null-hardened-feature-overrides
+name: Null-Hardened Feature Overrides
+summary: Validate remote numeric override maps defensively so null, non-finite, or
+  negative flag payloads never corrupt runtime thresholds.
+when_to_use: Apply when remote feature flags or runtime override maps can influence
+  thresholds, but the flag service may return null or malformed values.
+category: remote-bridge
+maturity: recommended
+tags:
+- remote-bridge
+- input-validation
+- agent-runtime
+bundles:
+- remote-bridge
+- bridge-privacy
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/null-hardened-feature-overrides/SKILL.md
+  codex: agents/codex/skills/null-hardened-feature-overrides/SKILL.md
+  claude_code: agents/claude-code/skills/null-hardened-feature-overrides/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: remote-bridge
+  review_status: curated

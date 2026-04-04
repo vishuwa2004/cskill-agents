@@ -1,0 +1,31 @@
+slug: dead-path-update-skipping
+name: Dead Path Update Skipping
+summary: Skip update actions that point at missing local paths when a valid materialized
+  entry already exists, preserving the working state instead of converting drift into
+  a noisy failure.
+when_to_use: Use when update candidates come from local paths that may disappear across
+  checkouts, but existing materialized state should remain usable until a valid replacement
+  exists.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+- safety-worktrees
+- workspace-safety
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/dead-path-update-skipping/SKILL.md
+  codex: agents/codex/skills/dead-path-update-skipping/SKILL.md
+  claude_code: agents/claude-code/skills/dead-path-update-skipping/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

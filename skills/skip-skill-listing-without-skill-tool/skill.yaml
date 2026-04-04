@@ -1,0 +1,27 @@
+slug: skip-skill-listing-without-skill-tool
+name: Skip Skill Listing Without Skill Tool
+summary: Omit skill-listing attachments for agents that do not expose the Skill tool,
+  so discoverability context is only sent where it can be acted on.
+when_to_use: Apply when an attachment or context injector is about to advertise capabilities
+  to an agent that may not have the tool needed to use them.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/skip-skill-listing-without-skill-tool/SKILL.md
+  codex: agents/codex/skills/skip-skill-listing-without-skill-tool/SKILL.md
+  claude_code: agents/claude-code/skills/skip-skill-listing-without-skill-tool/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

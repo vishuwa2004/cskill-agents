@@ -1,0 +1,27 @@
+slug: turn-scoped-skill-discovery-reset
+name: Turn Scoped Skill Discovery Reset
+summary: "Reset per-turn skill discovery tracking so long-lived sessions don\u2019\
+  t leak outdated discovery flags while still honoring already-known skills."
+when_to_use: Use when the conversation engine needs to clear the list of discovered
+  skills at the start of each new turn so repeated invocations stay accurate.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/turn-scoped-skill-discovery-reset/SKILL.md
+  codex: agents/codex/skills/turn-scoped-skill-discovery-reset/SKILL.md
+  claude_code: agents/claude-code/skills/turn-scoped-skill-discovery-reset/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

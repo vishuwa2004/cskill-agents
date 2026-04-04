@@ -18,3 +18,14 @@ agents/codex/skills/relevant-memory-selection-by-header
 agents/codex/skills/tool-success-aware-memory-suppression
 agents/codex/skills/forked-auto-memory-extraction
 agents/codex/skills/user-input-before-thread-attachments
+agents/codex/skills/cache-safe-stop-hook-snapshotting
+agents/codex/skills/compact-boundary-session-distillation
+agents/codex/skills/empty-trigger-short-circuit-before-app-state
+agents/codex/skills/main-agent-vs-background-memory-extraction-exclusion
+agents/codex/skills/main-thread-only-cache-editing
+agents/codex/skills/mark-after-filter-memory-deduplication
+agents/codex/skills/memory-directory-exists-guidance
+agents/codex/skills/memory-entrypoint-with-index-discipline
+agents/codex/skills/nested-memory-trigger-consume-and-clear
+agents/codex/skills/role-aware-context-slimming
+agents/codex/skills/time-based-microcompact-trigger

@@ -8,3 +8,13 @@ agents/claude-code/skills/progress-event-state-bridge
 agents/claude-code/skills/seed-before-diff-marketplace-registration
 agents/claude-code/skills/steady-state-sidecar-sync
 agents/claude-code/skills/three-layer-extension-sync
+agents/claude-code/skills/aggregated-change-signal-return
+agents/claude-code/skills/cache-sweep-activation-fallback
+agents/claude-code/skills/cache-warm-before-cache-only-fanout
+agents/claude-code/skills/dead-path-update-skipping
+agents/claude-code/skills/deferred-refresh-flag-contract
+agents/claude-code/skills/diff-first-progress-projection
+agents/claude-code/skills/fallback-source-presence-sufficiency
+agents/claude-code/skills/materialization-aware-refresh-escalation
+agents/claude-code/skills/mode-gated-reconcile-skip-filter
+agents/claude-code/skills/nonblocking-plugin-install-status-projection

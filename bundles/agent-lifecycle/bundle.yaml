@@ -1,12 +1,18 @@
 id: agent-lifecycle
-name: "Agent Lifecycle"
-description: "Child-agent context handoff, scoped MCP setup, lifecycle cleanup, and completion reporting."
+name: Agent Lifecycle
+description: Child-agent context handoff, scoped MCP setup, lifecycle cleanup, and
+  completion reporting.
 skills:
-  - additive-agent-tool-surface-construction
-  - agent-specific-mcp-server-initialization
-  - permission-overlay-inheritance
-  - lifecycle-scoped-resource-cleanup
-  - append-only-sidechain-transcripts
-  - subagent-metrics-bridging
-  - prompt-context-handoff-for-agent-runtime
-  - trusted-frontmatter-gating
+- additive-agent-tool-surface-construction
+- agent-specific-mcp-server-initialization
+- permission-overlay-inheritance
+- lifecycle-scoped-resource-cleanup
+- append-only-sidechain-transcripts
+- subagent-metrics-bridging
+- prompt-context-handoff-for-agent-runtime
+- trusted-frontmatter-gating
+- inherited-flags-for-spawned-teammates
+- main-agent-vs-background-memory-extraction-exclusion
+- parallelism-aware-skill-step-design
+- role-aware-context-slimming
+- session-memory-mailbox-exclusion

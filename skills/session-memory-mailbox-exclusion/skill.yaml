@@ -1,0 +1,27 @@
+slug: session-memory-mailbox-exclusion
+name: Session Memory Mailbox Exclusion
+summary: Prevent session-memory background forks from draining teammate mailbox attachments
+  that belong to the main lead thread.
+when_to_use: Apply when a background or forked agent shares team context with a leader
+  thread and must not consume mailbox messages intended for the leader.
+category: multi-agent
+maturity: recommended
+tags:
+- multi-agent
+- agent-coordination
+- agent-runtime
+bundles:
+- multi-agent
+- agent-lifecycle
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/session-memory-mailbox-exclusion/SKILL.md
+  codex: agents/codex/skills/session-memory-mailbox-exclusion/SKILL.md
+  claude_code: agents/claude-code/skills/session-memory-mailbox-exclusion/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: multi-agent
+  review_status: curated

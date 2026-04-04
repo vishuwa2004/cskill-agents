@@ -1,0 +1,27 @@
+slug: skip-skill-listing-in-test-environment
+name: Skip Skill Listing in Test Environment
+summary: Suppress skill-listing attachments in test mode so discoverability noise
+  does not interfere with deterministic test behavior.
+when_to_use: Apply when tests exercise attachment-building code paths but do not need
+  discoverability payloads such as skill listings.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/skip-skill-listing-in-test-environment/SKILL.md
+  codex: agents/codex/skills/skip-skill-listing-in-test-environment/SKILL.md
+  claude_code: agents/claude-code/skills/skip-skill-listing-in-test-environment/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

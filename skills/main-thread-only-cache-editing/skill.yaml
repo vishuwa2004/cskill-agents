@@ -1,0 +1,27 @@
+slug: main-thread-only-cache-editing
+name: Main Thread Only Cache Editing
+summary: Gate cached microcompact cache edits to the main thread so background forks
+  cannot alter the shared cache state.
+when_to_use: Use when cached microcompact runs and you must prevent subagents or forks
+  from writing cache edits that the main thread shares.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- compaction-core
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/main-thread-only-cache-editing/SKILL.md
+  codex: agents/codex/skills/main-thread-only-cache-editing/SKILL.md
+  claude_code: agents/claude-code/skills/main-thread-only-cache-editing/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

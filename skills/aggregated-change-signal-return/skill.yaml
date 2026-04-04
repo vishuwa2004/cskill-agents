@@ -1,0 +1,28 @@
+slug: aggregated-change-signal-return
+name: Aggregated Change Signal Return
+summary: Collapse multiple change sources into one caller-facing boolean so headless
+  bootstraps know whether a downstream refresh is necessary.
+when_to_use: Apply when a headless setup flow can change state through several mechanisms
+  but callers only need one final answer about whether they must refresh downstream
+  registries.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/aggregated-change-signal-return/SKILL.md
+  codex: agents/codex/skills/aggregated-change-signal-return/SKILL.md
+  claude_code: agents/claude-code/skills/aggregated-change-signal-return/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

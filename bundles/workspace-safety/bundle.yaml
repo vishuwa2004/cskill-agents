@@ -1,12 +1,18 @@
 id: workspace-safety
-name: "Workspace Safety"
-description: "Shell validation, sensitive-path guards, and worktree-safe repository operations."
+name: Workspace Safety
+description: Shell validation, sensitive-path guards, and worktree-safe repository
+  operations.
 skills:
-  - declarative-read-only-command-allowlists
-  - required-argument-aware-flag-validation
-  - cross-shell-command-safety-maps
-  - dangerous-config-file-protection
-  - case-normalized-sensitive-path-guards
-  - canonical-worktree-path-normalization
-  - safe-worktree-slug-validation
-  - fast-worktree-reuse-with-head-pointer-checks
+- declarative-read-only-command-allowlists
+- required-argument-aware-flag-validation
+- cross-shell-command-safety-maps
+- dangerous-config-file-protection
+- case-normalized-sensitive-path-guards
+- canonical-worktree-path-normalization
+- safe-worktree-slug-validation
+- fast-worktree-reuse-with-head-pointer-checks
+- dead-path-update-skipping
+- empty-repo-bundle-preflight
+- reachable-wip-via-temporary-refs
+- skill-scoped-permission-suggestions
+- staged-bundle-fallback-chain

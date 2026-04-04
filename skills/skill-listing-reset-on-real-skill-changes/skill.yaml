@@ -1,0 +1,27 @@
+slug: skill-listing-reset-on-real-skill-changes
+name: Skill Listing Reset on Real Skill Changes
+summary: Reset skill-listing announcement state only when the underlying skill set
+  actually changes, not on compaction or transcript churn.
+when_to_use: Apply when a system tracks which skills have already been announced and
+  must decide when that sent-state should be cleared.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/skill-listing-reset-on-real-skill-changes/SKILL.md
+  codex: agents/codex/skills/skill-listing-reset-on-real-skill-changes/SKILL.md
+  claude_code: agents/claude-code/skills/skill-listing-reset-on-real-skill-changes/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

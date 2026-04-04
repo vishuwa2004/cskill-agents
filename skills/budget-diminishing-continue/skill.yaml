@@ -1,0 +1,27 @@
+slug: budget-diminishing-continue
+name: Budget Diminishing Continue
+summary: Issue continuation nudges while the turn stays under budget, then halt once
+  diminishing returns or the budget cap justify stopping.
+when_to_use: Apply when you have a task-level token budget and must decide between
+  continuing and stopping while respecting diminishing returns.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/budget-diminishing-continue/SKILL.md
+  codex: agents/codex/skills/budget-diminishing-continue/SKILL.md
+  claude_code: agents/claude-code/skills/budget-diminishing-continue/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

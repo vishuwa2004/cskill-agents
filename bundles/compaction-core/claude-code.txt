@@ -7,3 +7,5 @@ agents/claude-code/skills/progressive-compaction-prompt
 agents/claude-code/skills/compactable-tool-whitelist-gating
 agents/claude-code/skills/time-gap-cache-expiry-microcompact
 agents/claude-code/skills/token-budgeted-compaction-with-reinjection
+agents/claude-code/skills/main-thread-only-cache-editing
+agents/claude-code/skills/time-based-microcompact-trigger

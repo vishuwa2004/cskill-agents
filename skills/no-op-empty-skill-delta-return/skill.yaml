@@ -1,0 +1,27 @@
+slug: no-op-empty-skill-delta-return
+name: No-Op Empty Skill Delta Return
+summary: Return no attachment when an incremental skill delta has no unseen items
+  instead of emitting a formally empty update payload.
+when_to_use: Apply when an incremental attachment or announcement pass recomputes
+  a delta set and discovers there is nothing new to send.
+category: command-surfaces
+maturity: recommended
+tags:
+- command-surfaces
+- skill-listing
+- agent-runtime
+bundles:
+- command-surfaces
+- skill-discovery
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/no-op-empty-skill-delta-return/SKILL.md
+  codex: agents/codex/skills/no-op-empty-skill-delta-return/SKILL.md
+  claude_code: agents/claude-code/skills/no-op-empty-skill-delta-return/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: command-surfaces
+  review_status: curated

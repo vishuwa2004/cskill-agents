@@ -1,0 +1,27 @@
+slug: withheld-max-output-token-errors
+name: Withheld Max Output Token Errors
+summary: Delay surfacing max-output-token failures until the recovery loop completes,
+  then emit sanitized tool_result errors.
+when_to_use: Use this when a user turn hits the max-output-token limit but the system
+  keeps retrying so the recovery loop should finish before reporting an error.
+category: tool-orchestration
+maturity: recommended
+tags:
+- tool-orchestration
+- control-flow
+- agent-runtime
+bundles:
+- tool-orchestration
+- output-budgeting
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/withheld-max-output-token-errors/SKILL.md
+  codex: agents/codex/skills/withheld-max-output-token-errors/SKILL.md
+  claude_code: agents/claude-code/skills/withheld-max-output-token-errors/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: tool-orchestration
+  review_status: curated

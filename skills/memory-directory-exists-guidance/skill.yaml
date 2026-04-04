@@ -1,0 +1,27 @@
+slug: memory-directory-exists-guidance
+name: Memory Directory Exists Guidance
+summary: Ensure memory directories exist once and surface consistent guidance so agents
+  skip redundant mkdir calls.
+when_to_use: Use whenever you plan to write memory files so the agent can assume the
+  directory exists instead of repeatedly running `mkdir -p`.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/memory-directory-exists-guidance/SKILL.md
+  codex: agents/codex/skills/memory-directory-exists-guidance/SKILL.md
+  claude_code: agents/claude-code/skills/memory-directory-exists-guidance/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

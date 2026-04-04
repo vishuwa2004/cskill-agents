@@ -1,14 +1,25 @@
 id: extension-sync
-name: "Extension Sync"
-description: "Marketplace reconciliation, extension lifecycle parity, and runtime refresh consistency."
+name: Extension Sync
+description: Marketplace reconciliation, extension lifecycle parity, and runtime refresh
+  consistency.
 skills:
-  - auto-refresh-after-new-plugin-sources
-  - background-marketplace-reconciliation
-  - canonical-root-marketplace-path-normalization
-  - delist-after-reconcile-enforcement
-  - external-error-preserving-refresh-merge
-  - headless-interactive-reconcile-parity
-  - progress-event-state-bridge
-  - seed-before-diff-marketplace-registration
-  - steady-state-sidecar-sync
-  - three-layer-extension-sync
+- auto-refresh-after-new-plugin-sources
+- background-marketplace-reconciliation
+- canonical-root-marketplace-path-normalization
+- delist-after-reconcile-enforcement
+- external-error-preserving-refresh-merge
+- headless-interactive-reconcile-parity
+- progress-event-state-bridge
+- seed-before-diff-marketplace-registration
+- steady-state-sidecar-sync
+- three-layer-extension-sync
+- aggregated-change-signal-return
+- cache-sweep-activation-fallback
+- cache-warm-before-cache-only-fanout
+- dead-path-update-skipping
+- deferred-refresh-flag-contract
+- diff-first-progress-projection
+- fallback-source-presence-sufficiency
+- materialization-aware-refresh-escalation
+- mode-gated-reconcile-skip-filter
+- nonblocking-plugin-install-status-projection

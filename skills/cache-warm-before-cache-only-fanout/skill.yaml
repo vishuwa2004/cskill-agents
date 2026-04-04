@@ -1,0 +1,27 @@
+slug: cache-warm-before-cache-only-fanout
+name: Cache Warm Before Cache-Only Fanout
+summary: Warm the authoritative cache path first, then fan out cache-only readers
+  in parallel so derived loaders never race stale state.
+when_to_use: Apply when one authoritative load populates caches that several cheaper
+  readers depend on, and parallel reads would race the warm path.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/cache-warm-before-cache-only-fanout/SKILL.md
+  codex: agents/codex/skills/cache-warm-before-cache-only-fanout/SKILL.md
+  claude_code: agents/claude-code/skills/cache-warm-before-cache-only-fanout/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

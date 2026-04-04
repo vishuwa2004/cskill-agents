@@ -6,3 +6,4 @@ agents/codex/skills/shared-system-init-shape-parity
 agents/codex/skills/privacy-redacted-repl-bridge-system-init
 agents/codex/skills/nonblocking-post-connect-capability-broadcast
 agents/codex/skills/transport-error-normalization-and-retry-policy
+agents/codex/skills/null-hardened-feature-overrides

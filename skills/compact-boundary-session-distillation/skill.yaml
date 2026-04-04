@@ -1,0 +1,28 @@
+slug: compact-boundary-session-distillation
+name: Compact Boundary Session Distillation
+summary: Distill the compact boundary delta into the session memory summary and the
+  freshest user cues needed for skill capture prompts.
+when_to_use: When skillify captures a repeating process, use the latest session memory
+  and the user messages after the most recent compact boundary so the prompt only
+  contains the current instructions.
+category: context-management
+maturity: recommended
+tags:
+- context-management
+- memory-control
+- agent-runtime
+bundles:
+- context-management
+- memory-signals
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/compact-boundary-session-distillation/SKILL.md
+  codex: agents/codex/skills/compact-boundary-session-distillation/SKILL.md
+  claude_code: agents/claude-code/skills/compact-boundary-session-distillation/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: context-management
+  review_status: curated

@@ -1,22 +1,30 @@
 id: multi-agent
-name: "Multi-Agent"
-description: "Subagent tool surfaces, fork control, lifecycle cleanup, and isolation patterns."
+name: Multi-Agent
+description: Subagent tool surfaces, fork control, lifecycle cleanup, and isolation
+  patterns.
 skills:
-  - additive-agent-tool-surface-construction
-  - per-agent-skill-listing-dedupe
-  - hook-context-attachment-injection
-  - agent-specific-mcp-server-initialization
-  - namespace-resolved-skill-preloading
-  - plugin-only-agent-surface-gating
-  - built-in-agent-feature-gating
-  - cache-prefix-stability-for-subagents
-  - cache-identical-fork-prefix-construction
-  - permission-overlay-inheritance
-  - fork-child-directive-guardrails
-  - lifecycle-scoped-resource-cleanup
-  - forked-skill-execution-with-isolated-context
-  - forked-auto-memory-extraction
-  - append-only-sidechain-transcripts
-  - subagent-metrics-bridging
-  - trusted-frontmatter-gating
-  - orphaned-tool-call-sanitizer
+- additive-agent-tool-surface-construction
+- per-agent-skill-listing-dedupe
+- hook-context-attachment-injection
+- agent-specific-mcp-server-initialization
+- namespace-resolved-skill-preloading
+- plugin-only-agent-surface-gating
+- built-in-agent-feature-gating
+- cache-prefix-stability-for-subagents
+- cache-identical-fork-prefix-construction
+- permission-overlay-inheritance
+- fork-child-directive-guardrails
+- lifecycle-scoped-resource-cleanup
+- forked-skill-execution-with-isolated-context
+- forked-auto-memory-extraction
+- append-only-sidechain-transcripts
+- subagent-metrics-bridging
+- trusted-frontmatter-gating
+- orphaned-tool-call-sanitizer
+- fork-gap-fill-reconstruction
+- inherited-flags-for-spawned-teammates
+- main-agent-vs-background-memory-extraction-exclusion
+- main-thread-empty-string-agent-key-normalization
+- parallelism-aware-skill-step-design
+- role-aware-context-slimming
+- session-memory-mailbox-exclusion

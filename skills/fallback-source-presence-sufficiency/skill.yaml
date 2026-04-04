@@ -1,0 +1,28 @@
+slug: fallback-source-presence-sufficiency
+name: Fallback Source Presence Sufficiency
+summary: When a declared source is only a fallback default, treat any existing materialized
+  source as satisfying the contract instead of forcing a replacement.
+when_to_use: Apply when a configuration entry represents a fallback source and existing
+  materialized state from another source should be preserved if it already satisfies
+  presence.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/fallback-source-presence-sufficiency/SKILL.md
+  codex: agents/codex/skills/fallback-source-presence-sufficiency/SKILL.md
+  claude_code: agents/claude-code/skills/fallback-source-presence-sufficiency/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

@@ -4,3 +4,12 @@ agents/codex/skills/modality-preserving-binary-offload
 agents/codex/skills/tail-preserving-task-output-truncation
 agents/codex/skills/wire-shape-aligned-budgeting
 agents/codex/skills/decision-fate-freezing
+agents/codex/skills/atomic-post-await-state-commit
+agents/codex/skills/budget-diminishing-continue
+agents/codex/skills/create-only-idempotent-artifact-write
+agents/codex/skills/empty-payload-sentinel-guard
+agents/codex/skills/exact-rendered-decision-journaling
+agents/codex/skills/prevent-continuation-stop-hook-contract
+agents/codex/skills/prevent-continuation-stop-hook-messaging
+agents/codex/skills/telemetry-sanitized-skill-invocation
+agents/codex/skills/withheld-max-output-token-errors

@@ -6,3 +6,8 @@ agents/claude-code/skills/case-normalized-sensitive-path-guards
 agents/claude-code/skills/canonical-worktree-path-normalization
 agents/claude-code/skills/safe-worktree-slug-validation
 agents/claude-code/skills/fast-worktree-reuse-with-head-pointer-checks
+agents/claude-code/skills/dead-path-update-skipping
+agents/claude-code/skills/empty-repo-bundle-preflight
+agents/claude-code/skills/reachable-wip-via-temporary-refs
+agents/claude-code/skills/skill-scoped-permission-suggestions
+agents/claude-code/skills/staged-bundle-fallback-chain

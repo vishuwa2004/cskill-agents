@@ -1,0 +1,28 @@
+slug: materialization-aware-refresh-escalation
+name: Materialization-Aware Refresh Escalation
+summary: React to marketplace materialization diffs by refreshing plugins when new
+  installs land and escalating to needsRefresh when updates or refresh failures occur.
+when_to_use: When background plugin installation reconcilers detect that declared
+  marketplaces differ from what is materialized, use the diff to decide whether to
+  auto-refresh plugins or escalate to a manual refresh prompt.
+category: extensions-mcp
+maturity: recommended
+tags:
+- extensions-mcp
+- extension-lifecycle
+- agent-runtime
+bundles:
+- extensions-mcp
+- extension-sync
+targets:
+- universal
+- codex-compatible
+- claude-code-compatible
+paths:
+  universal: skills/materialization-aware-refresh-escalation/SKILL.md
+  codex: agents/codex/skills/materialization-aware-refresh-escalation/SKILL.md
+  claude_code: agents/claude-code/skills/materialization-aware-refresh-escalation/SKILL.md
+source:
+  type: reviewed-implementation
+  pattern_family: extensions-mcp
+  review_status: curated

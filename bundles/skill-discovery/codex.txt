@@ -6,3 +6,12 @@ agents/codex/skills/mcp-skill-vs-prompt-discovery-filtering
 agents/codex/skills/local-and-mcp-skill-name-deduplication
 agents/codex/skills/slash-command-skill-classification-filter
 agents/codex/skills/cli-command-surface-audit
+agents/codex/skills/bundled-skill-file-extraction
+agents/codex/skills/classified-skill-listing-debug-telemetry
+agents/codex/skills/no-op-empty-skill-delta-return
+agents/codex/skills/resume-skill-listing-suppression
+agents/codex/skills/skill-listing-reset-on-real-skill-changes
+agents/codex/skills/skip-skill-discovery-on-skill-expansion
+agents/codex/skills/skip-skill-listing-in-test-environment
+agents/codex/skills/skip-skill-listing-without-skill-tool
+agents/codex/skills/turn-scoped-skill-discovery-reset
