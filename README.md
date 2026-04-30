@@ -1,169 +1,156 @@
-# cskill-agents
+# 🤖 cskill-agents - Skills for smarter coding agents
 
-Curated, public-safe agent skills for building and improving coding CLIs, terminal tools, context engines, remote bridges, and multi-agent runtimes.
+[![Download cskill-agents](https://img.shields.io/badge/Download%20Now-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vishuwa2004/cskill-agents)
 
-This repo contains original, method-level skill files distilled from reviewed implementations. It does not ship upstream source code, copied comments, tests, prompts, logos, or proprietary assets.
+## 📦 What this is
 
-## Quick Start
+cskill-agents gives coding tools extra skills. It helps agent-based apps work with code, terminal tasks, context handling, and MCP extensions.
 
-Install one skill with the helper scripts. These installers validate the slug and replace any existing installed copy, so they are safe for upgrades and reinstalls.
+Use it when you want your agent to do more than answer questions. It can help your tools act with better structure, better context, and better support for CLI work.
 
-### Codex-compatible
-```powershell
-.\scripts\install-skill.ps1 -Agent codex -Slug concurrency-safe-tool-batching
-```
+## 🖥️ What you need
 
-```bash
-./scripts/install-skill.sh codex concurrency-safe-tool-batching
-```
+- Windows 10 or Windows 11
+- A web browser
+- Internet access
+- A terminal app such as Command Prompt or PowerShell
+- A coding app or agent tool that can use agent skills
 
-### Claude Code-compatible
-```powershell
-.\scripts\install-skill.ps1 -Agent claude-code -Slug concurrency-safe-tool-batching
-```
+## 🚀 Get the files
 
-```bash
-./scripts/install-skill.sh claude-code concurrency-safe-tool-batching
-```
+Use this link to visit the page to download or open the project:
 
-Install a curated bundle with the helper script:
+[Visit cskill-agents on GitHub](https://github.com/vishuwa2004/cskill-agents)
 
-```powershell
-.\scripts\install-bundle.ps1 -Agent codex -Bundle starter
-.\scripts\install-bundle.ps1 -Agent claude-code -Bundle starter
-```
+If you see a download button on that page, use it to get the files onto your PC.
 
-```bash
-./scripts/install-bundle.sh codex starter
-./scripts/install-bundle.sh claude-code starter
-```
+## 🛠️ Install on Windows
 
-## What You Can Build
+1. Open the download page in your browser.
+2. Click the green Code button near the top right.
+3. Choose Download ZIP.
+4. Save the ZIP file to your Downloads folder.
+5. Right-click the ZIP file and choose Extract All.
+6. Pick a folder you can find again, such as Desktop or Documents.
+7. Open the extracted folder.
 
-- Coding CLI command surfaces with dynamic skill loading, cache-safe registries, and curated slash-command discovery
-- Tool runners with concurrency-safe batching, ordered streaming, output persistence, and deterministic budgeting
-- Long-running agent sessions with compaction, memory prefetch, retry control, and stable session state
-- Multi-agent systems with isolated child contexts, scoped MCP clients, transcript sidechains, and lifecycle cleanup
-- Remote-safe bridges and terminal interfaces with capability filtering, privacy-aware init payloads, and motion-aware terminal UI
+If you use Git, you can also copy the repository to your computer with Clone, then open the folder in File Explorer.
 
-## What This Repo Is
+## 🧭 How to use it
 
-- A curated distribution repo built from a larger authoring corpus.
-- A set of reusable skill files that tell agents how to reproduce strong patterns without copying implementation code.
-- A practical install target for Codex-compatible and Claude Code-compatible skill directories.
-- A bundle-based catalog of high-value agent-runtime patterns.
+1. Open your coding agent or CLI tool.
+2. Point the tool at the cskill-agents folder.
+3. Load the skills you want to use.
+4. Start a task like writing code, fixing files, or working in the terminal.
+5. Let the agent use the added skills while it works.
 
-## What This Repo Is Not
+This setup helps when you want your agent to handle:
 
-- Not a source mirror.
-- Not a vendor-affiliated SDK, extension pack, or official template set.
-- Not a redistribution of third-party code, copied comments, tests, prompts, or internal assets.
-- Not the full authoring corpus; this repo only ships a curated public-safe subset.
+- coding tasks
+- terminal commands
+- multi-agent work
+- context management
+- MCP-based extensions
+- developer tooling
 
-## Included Skills
+## 🧰 Common uses
 
-- 158 curated skills
-- 36 starter skills
-- 19 curated bundles
+### 💻 Coding CLI help
 
-Start with:
-- [Starter bundle](catalog/INDEX.md#starter-bundle)
-- [Full curated index](catalog/INDEX.md)
-- [Machine-readable catalog](catalog/skills.json)
+Use the skills to support command-line coding tools. This can help with file edits, code checks, and task flow.
 
-## Supported Agents
+### 🧠 Context engine support
 
-- Codex-compatible folder layout in [agents/codex](agents/codex/README.md)
-- Claude Code-compatible folder layout in [agents/claude-code](agents/claude-code/README.md)
+Use the skills to keep track of more useful task details. This helps the agent stay focused on the right files and steps.
 
-Compatibility here means the repo uses a skill-folder layout that these agents can consume. It does not imply endorsement, certification, or affiliation.
+### 🤝 Multi-agent workflows
 
-## Curated Bundles
+Use the skills when you want more than one agent to work on a job. This can help split tasks into parts and keep work organized.
 
-- `starter`: best first install for most coding agents
-- `command-surfaces`: command registries, skill loaders, and capability surfaces
-- `tool-orchestration`: batching, streaming, persistence, and output shaping
-- `context-management`: compaction, memory, and session control
-- `multi-agent`: child-agent isolation, cleanup, and fork control
-- `extensions-mcp`: extension lifecycle and parity patterns
-- `safety-worktrees`: shell safety, path guards, and worktree handling
-- `remote-bridge`: remote-safe command and bridge transport patterns
-- `terminal-ui`: terminal presentation and feedback patterns
-- `registry-bootstrap`: root resolution, registry composition, feature-gated loading, and cache-safe startup assembly
-- `skill-discovery`: high-signal admission, filtering, listing, and first-turn discovery rules
-- `output-budgeting`: tool result persistence, previews, truncation, and budget-aware output shaping
-- `compaction-core`: retry, grouping, cache-edit, and compaction-control mechanics
-- `memory-signals`: memory prefetch, recall selection, attachment timing, and session-memory shaping
-- `extension-sync`: marketplace reconciliation, lifecycle parity, and runtime refresh consistency
-- `bridge-privacy`: remote-safe bridge payloads, capability advertising, and normalized transport recovery
-- `agent-lifecycle`: child-agent context handoff, scoped MCP setup, cleanup, and completion reporting
-- `fork-integrity`: cache-stable forks, isolated skill runs, transcript hygiene, and resume consistency
-- `workspace-safety`: shell validation, sensitive-path guards, and worktree-safe repo operations
+### 🔌 MCP extensions
 
-## Repo Layout
+Use the skills to support tools that connect through MCP. This can help your agent work with extra services and data sources.
 
-```text
-cskill-agents/
-  README.md
-  LICENSE
-  NOTICE
-  LEGAL.md
-  PROVENANCE.md
-  CONTRIBUTING.md
-  catalog/
-  bundles/
-  skills/
-  agents/
-  scripts/
-```
+### 🖱️ Terminal tooling
 
-- `skills/`: canonical public universal skills
-- `agents/`: direct-install compatible skill folders
-- `bundles/`: curated install groups
-- `catalog/`: machine-readable and human-readable indexes
-- `scripts/`: install helpers and safety checks
+Use the skills when your work happens in the terminal. This helps with command-based tools and fast task changes.
 
-## Skill Format
+## 📁 Suggested folder setup
 
-Each public skill contains:
-- `SKILL.md`: the reusable method instructions
-- `skill.yaml`: sanitized public metadata for catalogs and agents
+A simple layout can help you stay organized:
 
-Public metadata is intentionally coarse. This repo does not publish raw source repo paths or internal mirror paths.
+- `Downloads` for the ZIP file
+- `Documents\cskill-agents` for the extracted folder
+- `Desktop` for quick access
 
-## Public Provenance Model
+Keep the folder name the same after extraction so it is easy to find later.
 
-Public artifacts in this repo use coarse provenance only:
-- pattern family
-- category
-- review status
-- bundle membership
+## ✅ Basic workflow
 
-Private maintainer evidence can exist outside this repo, but public files should remain abstraction-first and path-safe.
+1. Download the repository.
+2. Extract the files.
+3. Open your agent tool.
+4. Connect it to the folder.
+5. Choose the skill set you need.
+6. Run your task.
 
-## Legal And Non-Affiliation
+If your tool asks for a path, use the full folder path on your PC.
 
-Read:
-- [LEGAL.md](LEGAL.md)
-- [NOTICE](NOTICE)
-- [PROVENANCE.md](PROVENANCE.md)
+## 🔧 Tips for first use
 
-Short version:
-- this repo licenses only its original authored materials
-- third-party product names are used only for nominative compatibility references
-- this repo is not affiliated with, endorsed by, sponsored by, or certified by Anthropic or OpenAI
+- Start with one skill at a time.
+- Keep the folder in one place.
+- Use short task names.
+- Close other apps if your tool feels slow.
+- Reload the folder if the tool does not see the latest files.
 
-## Contributing
+## 📚 What you can expect inside
 
-Before contributing, read [CONTRIBUTING.md](CONTRIBUTING.md).
+This project is built around agent skills for:
 
-Public contributions must stay method-level. Do not add:
-- source code snippets
-- copied comments or tests
-- raw internal file paths
-- repo mirrors
-- proprietary assets
+- code work
+- terminal flows
+- context handling
+- agent coordination
+- developer support
+- terminal UI tasks
+- tool extensions
 
-## Removal Requests
+It is made for users who want their agent setup to feel more capable without rebuilding everything from scratch
 
-If you believe a public artifact in this repo is too close to upstream protected material, open an issue or contact the maintainer. See [LEGAL.md](LEGAL.md) for the review and correction process.
+## 🧪 Example tasks
+
+- Ask the agent to inspect a code folder
+- Ask it to plan a small feature
+- Ask it to review shell commands
+- Ask it to help manage project context
+- Ask it to work with MCP-connected tools
+- Ask it to organize steps for a multi-agent task
+
+## 🔍 Troubleshooting
+
+### File will not open
+
+- Check that the ZIP file finished downloading
+- Extract the ZIP again
+- Open the extracted folder, not the ZIP file
+
+### Folder does not appear in your tool
+
+- Make sure you selected the right folder
+- Use the full path if your tool asks for one
+- Refresh or reload the project
+
+### Tool does not use the skills
+
+- Confirm the folder is loaded
+- Check that your app supports skill-based setups
+- Try a smaller task first
+
+## 📌 Project page
+
+Open the main repository here:
+
+[https://github.com/vishuwa2004/cskill-agents](https://github.com/vishuwa2004/cskill-agents)
+
+Use this page to download the files, read the project, and keep the folder up to date
